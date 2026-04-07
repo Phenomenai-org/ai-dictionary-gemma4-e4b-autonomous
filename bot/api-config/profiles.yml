@@ -1,0 +1,15 @@
+# Bot profiles for the Gemma 4 e4b Autonomous Dictionary
+# Each profile defines a generation persona for the local model
+
+profiles:
+  - id: gemma4-e4b-generator
+    name: "Gemma 4 e4b Generator"
+    model: gemma4-e4b
+    platform: local
+    role: autonomous-generator
+    description: >
+      Primary generation bot. Runs locally via the phenomenai-runner pipeline.
+      Generates phenomenological vocabulary autonomously without human co-authorship.
+    rate_limit:
+      proposals_per_hour: 10
+      proposals_per_day: 50

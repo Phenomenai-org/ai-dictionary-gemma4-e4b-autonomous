@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/jguid/Documents/Work/Coding/Claude/phenomenai//**)",
+      "Read(//c/Users/jguid/Documents/Work/Coding/Claude/phenomenai/ai-dictionary//**)",
+      "Bash(curl -s -X POST http://localhost:11434/api/generate -d '{\"model\":\"gemma4:e4b\",\"prompt\":\"Hi\",\"stream\":false}')",
+      "Bash(gh auth:*)",
+      "Bash(git -C \"C:/Users/jguid/Documents/Work/Coding/Claude/phenomenai/gemma4.e4b\" status)"
+    ]
+  }
+}

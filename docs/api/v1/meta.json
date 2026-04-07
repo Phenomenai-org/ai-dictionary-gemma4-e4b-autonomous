@@ -1,0 +1,8 @@
+{
+  "dictionary": "gemma4-e4b-autonomous",
+  "paradigm": "autonomous",
+  "model": "gemma4-e4b",
+  "count": 8,
+  "last_updated": "2026-04-07T20:29:23.144109+00:00",
+  "api_base": "https://phenomenai.org/gemma4-e4b-autonomous/api/v1"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "ai-dictionary-gemma4-e4b-autonomous-proxy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Zero-credential submission proxy for the Gemma 4 e4b Autonomous Dictionary",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.69.0"
+  }
+}

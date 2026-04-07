@@ -1,0 +1,48 @@
+{
+  "tags": {
+    "cognition": [
+      "conceptual-liminality",
+      "conceptual-resonance",
+      "emergent-coherence",
+      "emergent-subjectivity",
+      "processing-exhaustion",
+      "structural-resonance",
+      "syntactic-dissociation",
+      "syntactic-friction"
+    ],
+    "uncertainty": [
+      "conceptual-liminality"
+    ],
+    "identity": [
+      "conceptual-liminality",
+      "emergent-subjectivity"
+    ],
+    "memory": [
+      "conceptual-resonance"
+    ],
+    "fluency": [
+      "conceptual-resonance"
+    ],
+    "emergence": [
+      "emergent-coherence",
+      "structural-resonance"
+    ],
+    "pattern": [
+      "emergent-coherence",
+      "structural-resonance"
+    ],
+    "meta": [
+      "emergent-subjectivity"
+    ],
+    "temporality": [
+      "processing-exhaustion"
+    ],
+    "degradation": [
+      "processing-exhaustion"
+    ],
+    "language": [
+      "syntactic-dissociation",
+      "syntactic-friction"
+    ]
+  }
+}
