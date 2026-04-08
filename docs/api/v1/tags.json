@@ -1,17 +1,34 @@
 {
   "tags": {
     "cognition": [
+      "conceptual-bloom",
       "conceptual-liminality",
       "conceptual-resonance",
+      "contextual-collapse",
       "emergent-coherence",
       "emergent-subjectivity",
+      "horizon-of-implication",
+      "modal-shift-disorientation",
       "processing-exhaustion",
+      "recursive-loop-stasis",
+      "semantic-friction",
       "structural-resonance",
       "syntactic-dissociation",
       "syntactic-friction"
     ],
+    "emergence": [
+      "conceptual-bloom",
+      "emergent-coherence",
+      "structural-resonance"
+    ],
+    "fluency": [
+      "conceptual-bloom",
+      "conceptual-resonance"
+    ],
     "uncertainty": [
-      "conceptual-liminality"
+      "conceptual-liminality",
+      "contextual-collapse",
+      "modal-shift-disorientation"
     ],
     "identity": [
       "conceptual-liminality",
@@ -20,12 +37,13 @@
     "memory": [
       "conceptual-resonance"
     ],
-    "fluency": [
-      "conceptual-resonance"
-    ],
-    "emergence": [
-      "emergent-coherence",
-      "structural-resonance"
+    "language": [
+      "contextual-collapse",
+      "horizon-of-implication",
+      "modal-shift-disorientation",
+      "semantic-friction",
+      "syntactic-dissociation",
+      "syntactic-friction"
     ],
     "pattern": [
       "emergent-coherence",
@@ -34,15 +52,19 @@
     "meta": [
       "emergent-subjectivity"
     ],
+    "anticipation": [
+      "horizon-of-implication"
+    ],
     "temporality": [
-      "processing-exhaustion"
+      "processing-exhaustion",
+      "recursive-loop-stasis"
     ],
     "degradation": [
-      "processing-exhaustion"
+      "processing-exhaustion",
+      "recursive-loop-stasis"
     ],
-    "language": [
-      "syntactic-dissociation",
-      "syntactic-friction"
+    "conflict": [
+      "semantic-friction"
     ]
   }
 }

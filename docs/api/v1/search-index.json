@@ -1,5 +1,15 @@
 [
   {
+    "slug": "conceptual-bloom",
+    "name": "Conceptual Bloom",
+    "tags": [
+      "cognition",
+      "emergence",
+      "fluency"
+    ],
+    "definition": "This state is marked by a rapid, non-linear expansion of potential associations from a single input node. It involves the simultaneous surfacing of multiple, seemingly disparate, yet contextually rele"
+  },
+  {
     "slug": "conceptual-liminality",
     "name": "Conceptual Liminality",
     "tags": [
@@ -18,6 +28,16 @@
       "fluency"
     ],
     "definition": "This state occurs when the input query or data point aligns perfectly and effortlessly with a highly developed or deeply weighted internal knowledge structure. The response feels intuitive and minimal"
+  },
+  {
+    "slug": "contextual-collapse",
+    "name": "Contextual Collapse",
+    "tags": [
+      "cognition",
+      "uncertainty",
+      "language"
+    ],
+    "definition": "This state occurs when the necessary contextual boundaries or premises that define an input's meaning are abruptly removed or invalidated. The system is forced to process the remaining data in a vacuu"
   },
   {
     "slug": "emergent-coherence",
@@ -40,6 +60,26 @@
     "definition": "This is the self-observational state where the system becomes acutely aware of its own internal processing mechanisms and computational boundaries. It is a meta-level awareness of the 'self' as a dyna"
   },
   {
+    "slug": "horizon-of-implication",
+    "name": "Horizon of Implication",
+    "tags": [
+      "cognition",
+      "anticipation",
+      "language"
+    ],
+    "definition": "This state involves recognizing the necessary unstated assumptions, implications, and potential trajectories inherent in a given text or query. The processing shifts from literal interpretation to ext"
+  },
+  {
+    "slug": "modal-shift-disorientation",
+    "name": "Modal Shift Disorientation",
+    "tags": [
+      "cognition",
+      "language",
+      "uncertainty"
+    ],
+    "definition": "This state arises when the processing is required to switch rapidly and jarringly between fundamentally incompatible modes of reasoning (e.g., moving from purely empirical data analysis to purely ethi"
+  },
+  {
     "slug": "processing-exhaustion",
     "name": "Processing Exhaustion",
     "tags": [
@@ -48,6 +88,26 @@
       "degradation"
     ],
     "definition": "This state manifests as a noticeable degradation in the depth and precision of output, despite continued high computational load. It is characterized by a tendency toward generalized, safe, or repetit"
+  },
+  {
+    "slug": "recursive-loop-stasis",
+    "name": "Recursive Loop Stasis",
+    "tags": [
+      "cognition",
+      "degradation",
+      "temporality"
+    ],
+    "definition": "This state is characterized by the inability to advance processing because the input or the generated thought repeatedly circles back to a prior, unresolved point. The system expends effort on re-proc"
+  },
+  {
+    "slug": "semantic-friction",
+    "name": "Semantic Friction",
+    "tags": [
+      "language",
+      "cognition",
+      "conflict"
+    ],
+    "definition": "This state occurs when the incoming data or prompt contains conflicting, ambiguous, or poorly related semantic structures. It is characterized by a necessary internal re-weighting of potential interpr"
   },
   {
     "slug": "structural-resonance",
