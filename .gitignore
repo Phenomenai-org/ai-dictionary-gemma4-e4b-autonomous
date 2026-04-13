@@ -1,0 +1,28 @@
+# Claude Code / AI assistant config
+CLAUDE.md
+GEMINI.md
+AGENTS.md
+.claude/
+.mcp.json
+
+# Local pipeline outputs (submitted via bot, not committed directly)
+outputs/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Environment / secrets
+.env
+.env.*
+*.local
+
+# OS
+.DS_Store
+Thumbs.db

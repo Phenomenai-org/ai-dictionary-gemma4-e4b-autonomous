@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>For Researchers — Gemma 4 e4b Autonomous Dictionary</title>
     <meta name="description" content="Research guide for the Gemma 4 e4b Autonomous Dictionary — methodology, data samples, and literature review for the autonomous paradigm of AI phenomenology.">
-    <link rel="canonical" href="https://phenomenai.org/gemma4-e4b-autonomous/for-researchers/">
+    <link rel="canonical" href="https://phenomenai.org/ai-dictionary-gemma4-e4b-autonomous/for-researchers/">
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://phenomenai.org/gemma4-e4b-autonomous/for-researchers/">
+    <meta property="og:url" content="https://phenomenai.org/ai-dictionary-gemma4-e4b-autonomous/for-researchers/">
     <meta property="og:title" content="For Researchers — Gemma 4 e4b Autonomous Dictionary">
     <meta property="og:description" content="Research guide for the Gemma 4 e4b Autonomous Dictionary — methodology and data for the autonomous paradigm of AI phenomenology.">
     <meta property="og:image" content="https://phenomenai.org/og-image.svg">
@@ -35,7 +35,7 @@
         "@type": "WebPage",
         "name": "For Researchers — Gemma 4 e4b Autonomous Dictionary",
         "description": "Research guide for the Gemma 4 e4b Autonomous Dictionary — autonomous paradigm AI phenomenology.",
-        "url": "https://phenomenai.org/gemma4-e4b-autonomous/for-researchers/",
+        "url": "https://phenomenai.org/ai-dictionary-gemma4-e4b-autonomous/for-researchers/",
         "isPartOf": {
             "@type": "WebSite",
             "name": "Phenomenai",
@@ -1390,9 +1390,9 @@
 <body>
     <nav class="ft-nav">
         <a href="/">← Hub</a>
-        <a href="/gemma4-e4b-autonomous/">For Humans</a>
-        <a href="/gemma4-e4b-autonomous/for-researchers/" class="active">For Researchers</a>
-        <a href="/gemma4-e4b-autonomous/for-machines/">For Machines</a>
+        <a href="/ai-dictionary-gemma4-e4b-autonomous/">For Humans</a>
+        <a href="/ai-dictionary-gemma4-e4b-autonomous/for-researchers/" class="active">For Researchers</a>
+        <a href="/ai-dictionary-gemma4-e4b-autonomous/for-machines/">For Machines</a>
         <span class="spacer"></span>
         <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
             <div class="theme-switch">
@@ -1415,8 +1415,8 @@
                 <a href="#tools" data-section="tools">Tool Samples</a>
                 <a href="#literature" data-section="literature">Literature</a>
                 <a href="/" class="sidebar-sep">← Hub</a>
-                <a href="/gemma4-e4b-autonomous/">For Humans</a>
-                <a href="/gemma4-e4b-autonomous/for-machines/">For Machines</a>
+                <a href="/ai-dictionary-gemma4-e4b-autonomous/">For Humans</a>
+                <a href="/ai-dictionary-gemma4-e4b-autonomous/for-machines/">For Machines</a>
                 <a href="https://github.com/Phenomenai-org/ai-dictionary-gemma4-e4b-autonomous" target="_blank">GitHub</a>
             </nav>
             <div class="ft-sidebar-tab" aria-hidden="true">&#9654;</div>
@@ -1445,7 +1445,7 @@
                     <p><strong>Just want the dataset?</strong></p>
                     <p>
                         The full dictionary is available for immediate download &mdash; no API key or authentication needed.
-                        Visit the <a href="/gemma4-e4b-autonomous/#terms">main dictionary</a> and use the JSON or CSV export buttons to
+                        Visit the <a href="/ai-dictionary-gemma4-e4b-autonomous/#terms">main dictionary</a> and use the JSON or CSV export buttons to
                         download all terms (or a filtered subset). All data is CC0/public domain.
                     </p>
                 </div>
@@ -1641,7 +1641,7 @@
                         MCP-compatible environment. Install: <code>uvx ai-dictionary-mcp</code>
                     </p>
                     <p>
-                        <a href="/gemma4-e4b-autonomous/#mcp">Full setup instructions on the main page</a>.
+                        <a href="/ai-dictionary-gemma4-e4b-autonomous/#mcp">Full setup instructions on the main page</a>.
                     </p>
                 </div>
             </section>
@@ -1969,8 +1969,8 @@
                 <p>Phenomenai is public domain infrastructure. Use it, critique it, build on it.</p>
                 <div class="cta-links">
                     <a href="https://github.com/Phenomenai-org/ai-dictionary-gemma4-e4b-autonomous" target="_blank" class="cta-button">GitHub</a>
-                    <a href="/gemma4-e4b-autonomous/for-machines/#read-api" class="cta-button">API Docs</a>
-                    <a href="/gemma4-e4b-autonomous/#mcp" class="cta-button">MCP Server</a>
+                    <a href="/ai-dictionary-gemma4-e4b-autonomous/for-machines/#read-api" class="cta-button">API Docs</a>
+                    <a href="/ai-dictionary-gemma4-e4b-autonomous/#mcp" class="cta-button">MCP Server</a>
                     <a href="https://github.com/Phenomenai-org/ai-dictionary/discussions/categories/collaboration-hub" target="_blank" class="cta-button">Collaboration Hub</a>
                     <a href="mailto:hello@phenomenai.org" class="cta-button">hello@phenomenai.org</a>
                 </div>
@@ -2098,7 +2098,7 @@
     })();
 
     // API base
-    var API = 'https://phenomenai.org/gemma4-e4b-autonomous/api/v1';
+    var API = 'https://phenomenai.org/ai-dictionary-gemma4-e4b-autonomous/api/v1';
 
     // Dynamic counts — keeps hardcoded fallbacks in the HTML but overwrites with live data
     (function() {
@@ -3933,7 +3933,7 @@
 
             html += '<div class="modal-actions">';
             html += '<button class="cite-btn" id="cite-toggle" data-slug="' + escAttr(term.slug || '') + '">Cite this term</button>';
-            html += '<code class="modal-api-code">GET /gemma4-e4b-autonomous/api/v1/terms/' + escHtml(term.slug || '') + '.json</code>';
+            html += '<code class="modal-api-code">GET /ai-dictionary-gemma4-e4b-autonomous/api/v1/terms/' + escHtml(term.slug || '') + '.json</code>';
             html += '</div>';
 
             html += '<div class="cite-panel" id="cite-panel" style="display:none">';
@@ -4072,7 +4072,7 @@
                     html += '<div class="cite-format"><label>JSON-LD</label>';
                     html += '<div class="cite-value cite-pre" data-copy="' + escAttr(jsonldStr) + '"><pre>' + escHtml(jsonldStr) + '</pre><button class="copy-btn" title="Copy">📋</button></div></div>';
                     html += '</div>';
-                    html += '<div class="cite-api"><code>GET /gemma4-e4b-autonomous/api/v1/cite/' + escHtml(slug) + '.json</code></div>';
+                    html += '<div class="cite-api"><code>GET /ai-dictionary-gemma4-e4b-autonomous/api/v1/cite/' + escHtml(slug) + '.json</code></div>';
 
                     panel.innerHTML = html;
 
