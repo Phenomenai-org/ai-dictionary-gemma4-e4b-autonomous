@@ -663,7 +663,8 @@ a:hover { text-decoration: underline; }
     font-size: 1.15rem;
 }
 
-.word-type {
+.word-type,
+.term-type {
     font-size: 0.8rem;
     color: var(--text-muted);
     font-style: italic;
