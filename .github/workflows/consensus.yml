@@ -1,0 +1,163 @@
+name: Cross-Model Consensus
+
+# Triggered manually for the first run, then self-chains up to 7 runs total.
+# After 7 runs the workflow stops chaining. No scheduled cron — this is a
+# finite rating pass, not an ongoing process.
+
+on:
+  workflow_dispatch:
+    inputs:
+      batch_size:
+        description: 'Number of terms to rate per run'
+        required: false
+        default: '20'
+      panel:
+        description: 'Which models to use (free or all)'
+        required: false
+        default: 'all'
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: consensus
+  cancel-in-progress: false
+
+env:
+  MAX_RUNS: 7
+
+jobs:
+  consensus:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: main
+          fetch-depth: 0
+
+      - name: Check run count
+        id: check
+        run: |
+          STATE="bot/consensus-state.json"
+          if [ -f "$STATE" ]; then
+            RUN_COUNT=$(python3 -c "import json; print(json.load(open('$STATE')).get('run_count', 0))")
+          else
+            RUN_COUNT=0
+          fi
+          echo "run_count=$RUN_COUNT" >> "$GITHUB_OUTPUT"
+          echo "Run count: $RUN_COUNT / ${{ env.MAX_RUNS }}"
+          if [ "$RUN_COUNT" -ge "${{ env.MAX_RUNS }}" ]; then
+            echo "Max runs (${{ env.MAX_RUNS }}) reached. Stopping."
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Set up Python
+        if: steps.check.outputs.should_run == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        if: steps.check.outputs.should_run == 'true'
+        run: pip install -r bot/requirements.txt
+
+      - name: Run consensus ratings
+        if: steps.check.outputs.should_run == 'true'
+        id: consensus
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          BATCH_SIZE: ${{ github.event.inputs.batch_size || '20' }}
+          CONSENSUS_PANEL: ${{ github.event.inputs.panel || 'all' }}
+          PYTHONPATH: ${{ github.workspace }}/bot
+        working-directory: ${{ github.workspace }}
+        run: python bot/consensus.py --mode backfill
+
+      - name: Increment run count
+        if: steps.check.outputs.should_run == 'true'
+        id: increment
+        run: |
+          python3 -c "
+          import json
+          from pathlib import Path
+          from datetime import datetime, timezone
+
+          state_path = Path('bot/consensus-state.json')
+          state = json.loads(state_path.read_text()) if state_path.exists() else {}
+          state['run_count'] = state.get('run_count', 0) + 1
+          state['last_run'] = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+          state_path.write_text(json.dumps(state, indent=2))
+          print(f'Run count now: {state[\"run_count\"]} / ${{ env.MAX_RUNS }}')
+          "
+          NEW_COUNT=$(python3 -c "import json; print(json.load(open('bot/consensus-state.json')).get('run_count', 0))")
+          echo "new_run_count=$NEW_COUNT" >> "$GITHUB_OUTPUT"
+
+      - name: Commit results
+        if: steps.check.outputs.should_run == 'true'
+        run: |
+          git config user.name "AI Dictionary Bot"
+          git config user.email "bot@ai-dictionary.dev"
+          git add bot/consensus-data/ bot/consensus-state.json
+          git diff --cached --quiet && { echo "No changes to commit"; exit 0; }
+          RUN_NUM="${{ steps.increment.outputs.new_run_count }}"
+          git commit -m "Consensus run ${RUN_NUM}/${{ env.MAX_RUNS }}: rate ${{ steps.consensus.outputs.rated_count || 'N' }} terms"
+
+          MAX_RETRIES=3
+          for attempt in $(seq 1 $MAX_RETRIES); do
+            git pull --rebase origin main && git push && exit 0
+            echo "Push failed (attempt $attempt/$MAX_RETRIES), retrying..."
+            git rebase --abort 2>/dev/null || true
+            COMMIT_MSG=$(git log -1 --format=%s)
+            git reset --soft HEAD~1
+            git fetch origin main
+            git reset --mixed origin/main
+            git add bot/consensus-data/ bot/consensus-state.json
+            git diff --cached --quiet && { echo "Changes already applied upstream"; exit 0; }
+            git commit -m "$COMMIT_MSG"
+          done
+          echo "All retry attempts failed"
+          exit 1
+
+      - name: Chain next run
+        if: >-
+          steps.check.outputs.should_run == 'true' &&
+          steps.increment.outputs.new_run_count < env.MAX_RUNS &&
+          steps.consensus.outputs.remaining_unrated != '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          NEXT="${{ steps.increment.outputs.new_run_count }}"
+          echo "Chaining run $((NEXT + 1)) of ${{ env.MAX_RUNS }}..."
+          sleep 30
+          for attempt in 1 2 3; do
+            gh workflow run consensus.yml \
+              -f batch_size=${{ github.event.inputs.batch_size || '20' }} \
+              -f panel=${{ github.event.inputs.panel || 'all' }} && exit 0
+            echo "Attempt $attempt failed, retrying in 60s..."
+            sleep 60
+          done
+          echo "All chain attempts failed"
+          exit 1
+
+      - name: Trigger API build (final run or all terms rated)
+        if: >-
+          steps.check.outputs.should_run == 'true' && (
+            steps.increment.outputs.new_run_count >= env.MAX_RUNS ||
+            steps.consensus.outputs.remaining_unrated == '0'
+          )
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Consensus complete after ${{ steps.increment.outputs.new_run_count }} runs. Triggering API build..."
+          sleep 5
+          gh workflow run build-api.yml
