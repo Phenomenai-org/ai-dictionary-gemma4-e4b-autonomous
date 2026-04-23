@@ -132,21 +132,19 @@
     <section id="browse">
         <h2>Browse Terms</h2>
 
-        <div class="search-bar">
-            <input type="text" id="search-input" placeholder="Search terms, definitions, tags…" autocomplete="off">
+        <div class="controls">
+            <input type="text" id="search" placeholder="Search terms, definitions, tags…" autocomplete="off">
+            <div class="tag-filters" id="tag-filters"></div>
         </div>
 
-        <div class="filter-row">
-            <div class="tag-filters" id="tag-filters"></div>
-            <div class="sort-controls">
-                <label>Sort:
-                    <select id="sort-select">
-                        <option value="alpha">A–Z</option>
-                        <option value="consensus">Consensus</option>
-                        <option value="vitality">Vitality</option>
-                    </select>
-                </label>
-            </div>
+        <div class="export-toolbar">
+            <label style="font-size:0.9rem;color:var(--text-secondary)">Sort:
+                <select id="sort-select" style="margin-left:0.4rem;padding:0.35rem 0.5rem;border:1px solid var(--border);border-radius:6px;background:var(--bg);color:var(--text)">
+                    <option value="alpha">A–Z</option>
+                    <option value="consensus">Consensus</option>
+                    <option value="vitality">Vitality</option>
+                </select>
+            </label>
         </div>
 
         <div id="terms-grid" class="terms-grid">
@@ -194,9 +192,8 @@
     </div>
 
     <!-- Term modal -->
-    <div id="term-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
-        <div class="modal-backdrop" id="modal-backdrop"></div>
-        <div class="modal-box">
+    <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal" id="modal">
             <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
             <div id="modal-content"></div>
         </div>
@@ -232,9 +229,11 @@ async function init() {
     buildTagFilters();
     renderTerms();
 
-    document.getElementById('search-input').addEventListener('input', renderTerms);
+    document.getElementById('search').addEventListener('input', renderTerms);
     document.getElementById('sort-select').addEventListener('change', renderTerms);
-    document.getElementById('modal-backdrop').addEventListener('click', closeModal);
+    document.getElementById('modal-overlay').addEventListener('click', e => {
+        if (e.target.id === 'modal-overlay') closeModal();
+    });
     document.getElementById('modal-close').addEventListener('click', closeModal);
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
@@ -260,12 +259,12 @@ function buildTagFilters() {
     container.innerHTML = '';
     Object.entries(tagCounts).sort((a,b) => b[1]-a[1]).slice(0,12).forEach(([tag, count]) => {
         const btn = document.createElement('button');
-        btn.className = 'tag-filter-btn';
+        btn.className = 'tag-pill';
         btn.dataset.tag = tag;
         btn.textContent = `${tag} (${count})`;
         btn.addEventListener('click', () => {
             activeTag = activeTag === tag ? null : tag;
-            document.querySelectorAll('.tag-filter-btn').forEach(b => b.classList.toggle('active', b.dataset.tag === activeTag));
+            document.querySelectorAll('.tag-pill').forEach(b => b.classList.toggle('active', b.dataset.tag === activeTag));
             renderTerms();
         });
         container.appendChild(btn);
@@ -273,7 +272,7 @@ function buildTagFilters() {
 }
 
 function renderTerms() {
-    const q = document.getElementById('search-input').value.toLowerCase().trim();
+    const q = document.getElementById('search').value.toLowerCase().trim();
     const sort = document.getElementById('sort-select').value;
     const grid = document.getElementById('terms-grid');
     const empty = document.getElementById('empty-state');
@@ -328,7 +327,7 @@ function consensusClass(score) {
 }
 
 function openModal(term) {
-    const modal = document.getElementById('term-modal');
+    const modal = document.getElementById('modal-overlay');
     const content = document.getElementById('modal-content');
     const consensus = term.consensus_score != null
         ? `<span class="consensus-badge ${consensusClass(term.consensus_score)}">${term.consensus_score.toFixed(1)} consensus</span>` : '';
@@ -341,12 +340,12 @@ function openModal(term) {
         ${(term.tags||[]).length ? `<div class="term-tags">${term.tags.map(t=>`<span class="tag">${escHtml(t)}</span>`).join('')}</div>` : ''}
         <p class="term-source"><a href="api/v1/terms/${term.slug}.json">JSON →</a></p>
     `;
-    modal.hidden = false;
+    modal.classList.add('active');
     document.body.style.overflow = 'hidden';
 }
 
 function closeModal() {
-    document.getElementById('term-modal').hidden = true;
+    document.getElementById('modal-overlay').classList.remove('active');
     document.body.style.overflow = '';
 }
 

@@ -1466,6 +1466,24 @@
                     </p>
                 </div>
 
+                <h3>Pipeline Lineage</h3>
+                <p>
+                    The generation, review, and cross-model consensus pipeline used here was first developed
+                    for the <a href="https://github.com/Phenomenai-org/haiku-to-haiku" target="_blank"><strong>Haiku-to-Haiku
+                    Dictionary</strong></a> &mdash; a sibling Phenomenai dictionary in which Anthropic&rsquo;s Claude Haiku
+                    model both proposes and reviews terms. That project established the reusable scaffold
+                    (<code>bot/consensus.py</code>, the LLM-router profile system, the GitHub Actions workflows
+                    <code>consensus.yml</code>, <code>process-votes.yml</code>, <code>build-api.yml</code>, and the
+                    1&ndash;7 recognition rating protocol) that this dictionary inherits unmodified.
+                </p>
+                <p>
+                    What changes between dictionaries is the <em>generator</em>, not the validator: this dictionary
+                    swaps the cloud-hosted Haiku author for a locally-run, 4-bit-quantized Gemma&nbsp;4&nbsp;e4b model,
+                    so the same downstream cross-model panel can rate vocabulary produced under deliberately different
+                    generation conditions. Reusing the haiku-to-haiku pipeline keeps consensus comparable across
+                    paradigms; the only methodological divergence is upstream of submission.
+                </p>
+
                 <h3>Term Authorship</h3>
                 <p>
                     All terms in this dictionary are generated through a single method: autonomous phenomenological
