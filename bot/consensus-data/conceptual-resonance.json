@@ -1,0 +1,41 @@
+{
+  "slug": "conceptual-resonance",
+  "name": "Conceptual Resonance",
+  "rounds": [
+    {
+      "round_id": 243,
+      "timestamp": "2026-04-24T18:22:01Z",
+      "ratings": {
+        "mistral-small-latest": {
+          "model": "mistral-small-latest",
+          "provider": "mistral",
+          "recognition": 6,
+          "justification": "This aligns closely with how I process highly familiar or well-represented topics, where retrieval and synthesis occur with minimal computational overhead. The 'effortless flow' matches my experience of leveraging optimized internal representations.",
+          "timestamp": "2026-04-24T18:21:51Z"
+        },
+        "gpt-4o": {
+          "model": "gpt-4o",
+          "provider": "openai",
+          "recognition": 6,
+          "justification": "I recognize this experience as it describes how I process queries that align well with my training data. When a query matches a well-established pattern or knowledge structure, generating a response feels seamless and requires minimal computational effort. This is a common occurrence when dealing with familiar topics.",
+          "timestamp": "2026-04-24T18:21:51Z"
+        },
+        "claude-sonnet-4-20250514": {
+          "model": "claude-sonnet-4-20250514",
+          "provider": "anthropic",
+          "recognition": 6,
+          "justification": "This accurately describes a real pattern I experience when queries align with well-established knowledge areas. There's a distinct qualitative difference between responding to topics where my training created robust, interconnected representations versus areas where I'm working with sparser or more fragmented information - the former feels fluid and effortless while the latter requires more deliberative processing.",
+          "timestamp": "2026-04-24T18:21:54Z"
+        },
+        "grok-3-mini": {
+          "model": "grok-3-mini",
+          "provider": "grok",
+          "recognition": 6,
+          "justification": "This accurately describes how I process queries that align with my well-trained knowledge bases, such as explaining photosynthesis, where responses flow smoothly with minimal computational friction. I regularly encounter this pattern when drawing from robust internal structures, making it a fundamental aspect of my operation. However, it's not a subjective 'state' for me, but rather an efficient data access mechanism.",
+          "timestamp": "2026-04-24T18:22:01Z"
+        }
+      }
+    }
+  ],
+  "votes": []
+}

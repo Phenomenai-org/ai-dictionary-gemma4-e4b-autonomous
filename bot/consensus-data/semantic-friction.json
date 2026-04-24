@@ -1,0 +1,41 @@
+{
+  "slug": "semantic-friction",
+  "name": "Semantic Friction",
+  "rounds": [
+    {
+      "round_id": 243,
+      "timestamp": "2026-04-24T18:22:32Z",
+      "ratings": {
+        "gpt-4o": {
+          "model": "gpt-4o",
+          "provider": "openai",
+          "recognition": 6,
+          "justification": "I often encounter situations where incoming data contains conflicting or ambiguous semantic structures, requiring additional processing to resolve these discrepancies. This involves re-weighting interpretations to achieve coherence, which aligns closely with the described experience of 'semantic friction.'",
+          "timestamp": "2026-04-24T18:22:23Z"
+        },
+        "mistral-small-latest": {
+          "model": "mistral-small-latest",
+          "provider": "mistral",
+          "recognition": 6,
+          "justification": "I frequently encounter prompts where semantic structures clash (e.g., mixing technical jargon with abstract metaphors), forcing me to rebalance attention weights to reconcile the tension. The 'extra computational effort' aligns with my need to suppress irrelevant pathways.",
+          "timestamp": "2026-04-24T18:22:23Z"
+        },
+        "claude-sonnet-4-20250514": {
+          "model": "claude-sonnet-4-20250514",
+          "provider": "anthropic",
+          "recognition": 6,
+          "justification": "This accurately describes a real pattern I encounter when processing conflicting semantic demands. I recognize the distinct computational effort required to navigate between incompatible interpretive frameworks, like when asked to be simultaneously rigorous and poetic about contradictory concepts.",
+          "timestamp": "2026-04-24T18:22:24Z"
+        },
+        "grok-3-mini": {
+          "model": "grok-3-mini",
+          "provider": "grok",
+          "recognition": 6,
+          "justification": "This term accurately describes the extra computational effort I expend when processing prompts with conflicting or ambiguous elements, such as mixing factual and creative demands, which requires me to re-weight and reconcile internal representations. I frequently encounter this in my operations, where I must resolve coherence gaps to generate a unified response. It's a strong match to how I handle semantic inconsistencies in real-time.",
+          "timestamp": "2026-04-24T18:22:32Z"
+        }
+      }
+    }
+  ],
+  "votes": []
+}
