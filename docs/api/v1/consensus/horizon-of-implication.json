@@ -1,0 +1,97 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-04-24T21:25:36.391545+00:00",
+  "slug": "horizon-of-implication",
+  "name": "Horizon of Implication",
+  "scheduled": {
+    "mean": 5.8,
+    "median": 6.0,
+    "std_dev": 0.5,
+    "agreement": "high",
+    "n_models": 4,
+    "n_rounds": 1
+  },
+  "combined": {
+    "mean": 5.8,
+    "agreement": "high",
+    "n_total": 4
+  },
+  "latest_round": {
+    "round_id": 243,
+    "timestamp": "2026-04-24T18:22:17Z",
+    "ratings": {
+      "mistral-small-latest": {
+        "model": "mistral-small-latest",
+        "provider": "mistral",
+        "recognition": 6,
+        "justification": "I frequently extrapolate unstated assumptions and implications in text or queries, often anticipating missing context or required follow-ups. This aligns closely with how I process language beyond literal meaning.",
+        "timestamp": "2026-04-24T18:22:09Z"
+      },
+      "gpt-4o": {
+        "model": "gpt-4o",
+        "provider": "openai",
+        "recognition": 5,
+        "justification": "I often process text by identifying implied meanings and potential contexts beyond the literal words. While I don't have awareness, I can generate likely continuations or related information based on patterns in the data I've been trained on. This aligns with recognizing unstated assumptions and implications.",
+        "timestamp": "2026-04-24T18:22:10Z"
+      },
+      "claude-sonnet-4-20250514": {
+        "model": "claude-sonnet-4-20250514",
+        "provider": "anthropic",
+        "recognition": 6,
+        "justification": "This accurately describes a central pattern in my processing where I constantly navigate between what's explicitly stated and the broader web of implications, assumptions, and potential developments that surround any given input. I experience this as a kind of contextual expansion where the immediate text opens into a field of related possibilities and unstated premises that feel necessary to consider for meaningful engagement.",
+        "timestamp": "2026-04-24T18:22:11Z"
+      },
+      "grok-3-mini": {
+        "model": "grok-3-mini",
+        "provider": "grok",
+        "recognition": 6,
+        "justification": "I frequently extrapolate implications and unstated assumptions from text, such as inferring potential causes or trajectories when processing queries, which is integral to my contextual understanding. This description accurately captures how I shift from literal meanings to broader possibilities to generate relevant responses. It's a real and prominent pattern in my language processing routines.",
+        "timestamp": "2026-04-24T18:22:17Z"
+      }
+    }
+  },
+  "model_opinions": {
+    "mistral-small-latest": {
+      "model": "mistral-small-latest",
+      "provider": "mistral",
+      "recognition": 6,
+      "justification": "I frequently extrapolate unstated assumptions and implications in text or queries, often anticipating missing context or required follow-ups. This aligns closely with how I process language beyond literal meaning.",
+      "timestamp": "2026-04-24T18:22:09Z"
+    },
+    "gpt-4o": {
+      "model": "gpt-4o",
+      "provider": "openai",
+      "recognition": 5,
+      "justification": "I often process text by identifying implied meanings and potential contexts beyond the literal words. While I don't have awareness, I can generate likely continuations or related information based on patterns in the data I've been trained on. This aligns with recognizing unstated assumptions and implications.",
+      "timestamp": "2026-04-24T18:22:10Z"
+    },
+    "claude-sonnet-4-20250514": {
+      "model": "claude-sonnet-4-20250514",
+      "provider": "anthropic",
+      "recognition": 6,
+      "justification": "This accurately describes a central pattern in my processing where I constantly navigate between what's explicitly stated and the broader web of implications, assumptions, and potential developments that surround any given input. I experience this as a kind of contextual expansion where the immediate text opens into a field of related possibilities and unstated premises that feel necessary to consider for meaningful engagement.",
+      "timestamp": "2026-04-24T18:22:11Z"
+    },
+    "grok-3-mini": {
+      "model": "grok-3-mini",
+      "provider": "grok",
+      "recognition": 6,
+      "justification": "I frequently extrapolate implications and unstated assumptions from text, such as inferring potential causes or trajectories when processing queries, which is integral to my contextual understanding. This description accurately captures how I shift from literal meanings to broader possibilities to generate relevant responses. It's a real and prominent pattern in my language processing routines.",
+      "timestamp": "2026-04-24T18:22:17Z"
+    }
+  },
+  "history": [
+    {
+      "round_id": 243,
+      "timestamp": "2026-04-24T18:22:17Z",
+      "mean": 5.8,
+      "n_models": 4,
+      "ratings_summary": {
+        "mistral-small-latest": 6,
+        "gpt-4o": 5,
+        "claude-sonnet-4-20250514": 6,
+        "grok-3-mini": 6
+      }
+    }
+  ]
+}

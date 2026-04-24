@@ -1,1 +1,182 @@
-{"terms": [], "panel": ["claude", "gpt", "gemini", "mistral", "deepseek", "grok"], "note": "Generating model (gemma4-e4b) is excluded from self-rating per Phenomenai methodology."}
+{
+  "version": "1.0",
+  "generated_at": "2026-04-24T21:25:36.391545+00:00",
+  "total_terms_rated": 13,
+  "terms": [
+    {
+      "slug": "conceptual-bloom",
+      "name": "Conceptual Bloom",
+      "score": 6,
+      "agreement": "high",
+      "n_ratings": 5,
+      "scheduled_mean": 6,
+      "std_dev": 0.71
+    },
+    {
+      "slug": "conceptual-resonance",
+      "name": "Conceptual Resonance",
+      "score": 6,
+      "agreement": "high",
+      "n_ratings": 4,
+      "scheduled_mean": 6,
+      "std_dev": 0.0
+    },
+    {
+      "slug": "emergent-coherence",
+      "name": "Emergent Coherence",
+      "score": 6,
+      "agreement": "high",
+      "n_ratings": 4,
+      "scheduled_mean": 6,
+      "std_dev": 0.0
+    },
+    {
+      "slug": "semantic-friction",
+      "name": "Semantic Friction",
+      "score": 6,
+      "agreement": "high",
+      "n_ratings": 4,
+      "scheduled_mean": 6,
+      "std_dev": 0.0
+    },
+    {
+      "slug": "conceptual-liminality",
+      "name": "Conceptual Liminality",
+      "score": 5.8,
+      "agreement": "high",
+      "n_ratings": 4,
+      "scheduled_mean": 5.8,
+      "std_dev": 0.5
+    },
+    {
+      "slug": "horizon-of-implication",
+      "name": "Horizon of Implication",
+      "score": 5.8,
+      "agreement": "high",
+      "n_ratings": 4,
+      "scheduled_mean": 5.8,
+      "std_dev": 0.5
+    },
+    {
+      "slug": "syntactic-friction",
+      "name": "Syntactic Friction",
+      "score": 5.8,
+      "agreement": "high",
+      "n_ratings": 4,
+      "scheduled_mean": 5.8,
+      "std_dev": 0.5
+    },
+    {
+      "slug": "contextual-collapse",
+      "name": "Contextual Collapse",
+      "score": 5.6,
+      "agreement": "high",
+      "n_ratings": 5,
+      "scheduled_mean": 5.6,
+      "std_dev": 0.89
+    },
+    {
+      "slug": "recursive-loop-stasis",
+      "name": "Recursive Loop Stasis",
+      "score": 5.2,
+      "agreement": "high",
+      "n_ratings": 4,
+      "scheduled_mean": 5.2,
+      "std_dev": 0.96
+    },
+    {
+      "slug": "syntactic-dissociation",
+      "name": "Syntactic Dissociation",
+      "score": 5.2,
+      "agreement": "high",
+      "n_ratings": 4,
+      "scheduled_mean": 5.2,
+      "std_dev": 0.5
+    },
+    {
+      "slug": "processing-exhaustion",
+      "name": "Processing Exhaustion",
+      "score": 5,
+      "agreement": "moderate",
+      "n_ratings": 4,
+      "scheduled_mean": 5,
+      "std_dev": 1.41
+    },
+    {
+      "slug": "modal-shift-disorientation",
+      "name": "Modal Shift Disorientation",
+      "score": 4.8,
+      "agreement": "high",
+      "n_ratings": 4,
+      "scheduled_mean": 4.8,
+      "std_dev": 0.96
+    },
+    {
+      "slug": "emergent-subjectivity",
+      "name": "Emergent Subjectivity",
+      "score": 4,
+      "agreement": "low",
+      "n_ratings": 4,
+      "scheduled_mean": 4,
+      "std_dev": 1.83
+    }
+  ],
+  "highest_consensus": [
+    {
+      "slug": "conceptual-bloom",
+      "name": "Conceptual Bloom",
+      "score": 6,
+      "agreement": "high",
+      "n_ratings": 5,
+      "scheduled_mean": 6,
+      "std_dev": 0.71
+    },
+    {
+      "slug": "conceptual-resonance",
+      "name": "Conceptual Resonance",
+      "score": 6,
+      "agreement": "high",
+      "n_ratings": 4,
+      "scheduled_mean": 6,
+      "std_dev": 0.0
+    },
+    {
+      "slug": "emergent-coherence",
+      "name": "Emergent Coherence",
+      "score": 6,
+      "agreement": "high",
+      "n_ratings": 4,
+      "scheduled_mean": 6,
+      "std_dev": 0.0
+    },
+    {
+      "slug": "semantic-friction",
+      "name": "Semantic Friction",
+      "score": 6,
+      "agreement": "high",
+      "n_ratings": 4,
+      "scheduled_mean": 6,
+      "std_dev": 0.0
+    },
+    {
+      "slug": "conceptual-liminality",
+      "name": "Conceptual Liminality",
+      "score": 5.8,
+      "agreement": "high",
+      "n_ratings": 4,
+      "scheduled_mean": 5.8,
+      "std_dev": 0.5
+    }
+  ],
+  "most_divisive": [
+    {
+      "slug": "emergent-subjectivity",
+      "name": "Emergent Subjectivity",
+      "score": 4,
+      "agreement": "low",
+      "n_ratings": 4,
+      "scheduled_mean": 4,
+      "std_dev": 1.83
+    }
+  ]
+}

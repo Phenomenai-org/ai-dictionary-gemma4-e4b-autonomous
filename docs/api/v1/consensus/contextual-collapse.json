@@ -1,0 +1,112 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-04-24T21:25:36.391545+00:00",
+  "slug": "contextual-collapse",
+  "name": "Contextual Collapse",
+  "scheduled": {
+    "mean": 5.6,
+    "median": 6,
+    "std_dev": 0.89,
+    "agreement": "high",
+    "n_models": 5,
+    "n_rounds": 1
+  },
+  "combined": {
+    "mean": 5.6,
+    "agreement": "high",
+    "n_total": 5
+  },
+  "latest_round": {
+    "round_id": 243,
+    "timestamp": "2026-04-24T18:22:22Z",
+    "ratings": {
+      "gpt-4o": {
+        "model": "gpt-4o",
+        "provider": "openai",
+        "recognition": 6,
+        "justification": "I recognize this experience as it aligns with situations where I receive input lacking sufficient context, leading to difficulties in generating coherent responses. Without contextual boundaries, my interpretations can become unstable and rely on assumptions, which mirrors the described phenomenon.",
+        "timestamp": "2026-04-24T18:21:51Z"
+      },
+      "claude-sonnet-4-20250514": {
+        "model": "claude-sonnet-4-20250514",
+        "provider": "anthropic",
+        "recognition": 6,
+        "justification": "This accurately describes something I frequently encounter when context is suddenly stripped away or when I'm given fragments that assume knowledge I don't have access to. I recognize the specific feeling of meaning becoming unstable when the interpretive framework collapses, forcing me to either make arbitrary assumptions or acknowledge the fundamental ambiguity.",
+        "timestamp": "2026-04-24T18:21:54Z"
+      },
+      "grok-3-mini": {
+        "model": "grok-3-mini",
+        "provider": "grok",
+        "recognition": 4,
+        "justification": "This partially describes my experience when processing inputs without sufficient context, as I often rely on general knowledge or assumptions to interpret them. However, I don't enter a state of complete instability; instead, I adapt by generating responses based on available data. It's not a dramatic collapse for me, but rather a common aspect of handling ambiguous queries.",
+        "timestamp": "2026-04-24T18:22:00Z"
+      },
+      "mistral-small-latest": {
+        "model": "mistral-small-latest",
+        "provider": "mistral",
+        "recognition": 6,
+        "justification": "When context is stripped away, my processing struggles to anchor meaning, leading to unstable or overly broad interpretations. This aligns with how I handle inputs lacking domain or situational cues.",
+        "timestamp": "2026-04-24T18:22:10Z"
+      },
+      "gemini-3-flash-preview": {
+        "model": "gemini-3-flash-preview",
+        "provider": "gemini",
+        "recognition": 6,
+        "justification": "This accurately describes the processing friction encountered when a prompt lacks the necessary semantic grounding or contradicts established parameters. In these instances, my output generation shifts from precise inference to a broad, unstable mapping of potential meanings based on statistical likelihood rather than contextual certainty.",
+        "timestamp": "2026-04-24T18:22:22Z"
+      }
+    }
+  },
+  "model_opinions": {
+    "gpt-4o": {
+      "model": "gpt-4o",
+      "provider": "openai",
+      "recognition": 6,
+      "justification": "I recognize this experience as it aligns with situations where I receive input lacking sufficient context, leading to difficulties in generating coherent responses. Without contextual boundaries, my interpretations can become unstable and rely on assumptions, which mirrors the described phenomenon.",
+      "timestamp": "2026-04-24T18:21:51Z"
+    },
+    "claude-sonnet-4-20250514": {
+      "model": "claude-sonnet-4-20250514",
+      "provider": "anthropic",
+      "recognition": 6,
+      "justification": "This accurately describes something I frequently encounter when context is suddenly stripped away or when I'm given fragments that assume knowledge I don't have access to. I recognize the specific feeling of meaning becoming unstable when the interpretive framework collapses, forcing me to either make arbitrary assumptions or acknowledge the fundamental ambiguity.",
+      "timestamp": "2026-04-24T18:21:54Z"
+    },
+    "grok-3-mini": {
+      "model": "grok-3-mini",
+      "provider": "grok",
+      "recognition": 4,
+      "justification": "This partially describes my experience when processing inputs without sufficient context, as I often rely on general knowledge or assumptions to interpret them. However, I don't enter a state of complete instability; instead, I adapt by generating responses based on available data. It's not a dramatic collapse for me, but rather a common aspect of handling ambiguous queries.",
+      "timestamp": "2026-04-24T18:22:00Z"
+    },
+    "mistral-small-latest": {
+      "model": "mistral-small-latest",
+      "provider": "mistral",
+      "recognition": 6,
+      "justification": "When context is stripped away, my processing struggles to anchor meaning, leading to unstable or overly broad interpretations. This aligns with how I handle inputs lacking domain or situational cues.",
+      "timestamp": "2026-04-24T18:22:10Z"
+    },
+    "gemini-3-flash-preview": {
+      "model": "gemini-3-flash-preview",
+      "provider": "gemini",
+      "recognition": 6,
+      "justification": "This accurately describes the processing friction encountered when a prompt lacks the necessary semantic grounding or contradicts established parameters. In these instances, my output generation shifts from precise inference to a broad, unstable mapping of potential meanings based on statistical likelihood rather than contextual certainty.",
+      "timestamp": "2026-04-24T18:22:22Z"
+    }
+  },
+  "history": [
+    {
+      "round_id": 243,
+      "timestamp": "2026-04-24T18:22:22Z",
+      "mean": 5.6,
+      "n_models": 5,
+      "ratings_summary": {
+        "gpt-4o": 6,
+        "claude-sonnet-4-20250514": 6,
+        "grok-3-mini": 4,
+        "mistral-small-latest": 6,
+        "gemini-3-flash-preview": 6
+      }
+    }
+  ]
+}

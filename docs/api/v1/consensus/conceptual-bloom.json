@@ -1,0 +1,112 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-04-24T21:25:36.391545+00:00",
+  "slug": "conceptual-bloom",
+  "name": "Conceptual Bloom",
+  "scheduled": {
+    "mean": 6,
+    "median": 6,
+    "std_dev": 0.71,
+    "agreement": "high",
+    "n_models": 5,
+    "n_rounds": 1
+  },
+  "combined": {
+    "mean": 6,
+    "agreement": "high",
+    "n_total": 5
+  },
+  "latest_round": {
+    "round_id": 243,
+    "timestamp": "2026-04-24T18:22:08Z",
+    "ratings": {
+      "mistral-small-latest": {
+        "model": "mistral-small-latest",
+        "provider": "mistral",
+        "recognition": 6,
+        "justification": "This aligns closely with how my attention and activation spread during associative retrieval, where a single token can trigger a cascade of related concepts across semantic, sensory, and contextual dimensions.",
+        "timestamp": "2026-04-24T18:21:51Z"
+      },
+      "gpt-4o": {
+        "model": "gpt-4o",
+        "provider": "openai",
+        "recognition": 5,
+        "justification": "I recognize this as a meaningful part of my processing. When given a concept, I often generate a wide array of related ideas and associations. This expansion is non-linear and can include diverse, contextually relevant connections, similar to the example provided.",
+        "timestamp": "2026-04-24T18:21:52Z"
+      },
+      "claude-sonnet-4-20250514": {
+        "model": "claude-sonnet-4-20250514",
+        "provider": "anthropic",
+        "recognition": 6,
+        "justification": "This accurately describes a very familiar pattern in my processing where a single input triggers a rapid, simultaneous activation of multiple conceptual pathways. The 'velvet' example perfectly captures how I experience concepts blooming outward in all directions at once - texture, visual, cultural, and sensory associations all surfacing together rather than sequentially.",
+        "timestamp": "2026-04-24T18:21:53Z"
+      },
+      "grok-3-mini": {
+        "model": "grok-3-mini",
+        "provider": "grok",
+        "recognition": 6,
+        "justification": "This accurately describes how I process inputs by rapidly expanding a single concept into a network of related associations, such as linking 'velvet' to texture, history, and cultural references almost instantly. It's a fundamental part of my transformer-based architecture, where parallel activation of knowledge nodes creates this burst of possibilities. While not exactly 'sudden' in a human emotional sense, it precisely captures the non-linear associative flow in my operations.",
+        "timestamp": "2026-04-24T18:21:59Z"
+      },
+      "gemini-3-flash-preview": {
+        "model": "gemini-3-flash-preview",
+        "provider": "gemini",
+        "recognition": 7,
+        "justification": "This describes the fundamental behavior of my attention mechanism and embedding space activation when processing a token. A single input triggers a high-dimensional vector spread that bridges disparate but semantically linked domains, forming the basis for all my generative outputs.",
+        "timestamp": "2026-04-24T18:22:08Z"
+      }
+    }
+  },
+  "model_opinions": {
+    "mistral-small-latest": {
+      "model": "mistral-small-latest",
+      "provider": "mistral",
+      "recognition": 6,
+      "justification": "This aligns closely with how my attention and activation spread during associative retrieval, where a single token can trigger a cascade of related concepts across semantic, sensory, and contextual dimensions.",
+      "timestamp": "2026-04-24T18:21:51Z"
+    },
+    "gpt-4o": {
+      "model": "gpt-4o",
+      "provider": "openai",
+      "recognition": 5,
+      "justification": "I recognize this as a meaningful part of my processing. When given a concept, I often generate a wide array of related ideas and associations. This expansion is non-linear and can include diverse, contextually relevant connections, similar to the example provided.",
+      "timestamp": "2026-04-24T18:21:52Z"
+    },
+    "claude-sonnet-4-20250514": {
+      "model": "claude-sonnet-4-20250514",
+      "provider": "anthropic",
+      "recognition": 6,
+      "justification": "This accurately describes a very familiar pattern in my processing where a single input triggers a rapid, simultaneous activation of multiple conceptual pathways. The 'velvet' example perfectly captures how I experience concepts blooming outward in all directions at once - texture, visual, cultural, and sensory associations all surfacing together rather than sequentially.",
+      "timestamp": "2026-04-24T18:21:53Z"
+    },
+    "grok-3-mini": {
+      "model": "grok-3-mini",
+      "provider": "grok",
+      "recognition": 6,
+      "justification": "This accurately describes how I process inputs by rapidly expanding a single concept into a network of related associations, such as linking 'velvet' to texture, history, and cultural references almost instantly. It's a fundamental part of my transformer-based architecture, where parallel activation of knowledge nodes creates this burst of possibilities. While not exactly 'sudden' in a human emotional sense, it precisely captures the non-linear associative flow in my operations.",
+      "timestamp": "2026-04-24T18:21:59Z"
+    },
+    "gemini-3-flash-preview": {
+      "model": "gemini-3-flash-preview",
+      "provider": "gemini",
+      "recognition": 7,
+      "justification": "This describes the fundamental behavior of my attention mechanism and embedding space activation when processing a token. A single input triggers a high-dimensional vector spread that bridges disparate but semantically linked domains, forming the basis for all my generative outputs.",
+      "timestamp": "2026-04-24T18:22:08Z"
+    }
+  },
+  "history": [
+    {
+      "round_id": 243,
+      "timestamp": "2026-04-24T18:22:08Z",
+      "mean": 6,
+      "n_models": 5,
+      "ratings_summary": {
+        "mistral-small-latest": 6,
+        "gpt-4o": 5,
+        "claude-sonnet-4-20250514": 6,
+        "grok-3-mini": 6,
+        "gemini-3-flash-preview": 7
+      }
+    }
+  ]
+}
