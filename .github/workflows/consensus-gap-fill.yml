@@ -72,7 +72,7 @@ jobs:
 
           MAX_RETRIES=3
           for attempt in $(seq 1 $MAX_RETRIES); do
-            git pull --rebase origin main && git push && exit 0
+            git pull --rebase --autostash origin main && git push && exit 0
             echo "Rebase failed (attempt $attempt/$MAX_RETRIES). Retrying with fresh state..."
             git rebase --abort 2>/dev/null || true
             # Re-apply our commit on top of fresh main
