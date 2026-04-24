@@ -286,7 +286,7 @@ function renderTerms() {
     );
 
     if (sort === 'alpha') filtered.sort((a,b) => a.name.localeCompare(b.name));
-    else if (sort === 'consensus') filtered.sort((a,b) => (b.consensus_score||0) - (a.consensus_score||0));
+    else if (sort === 'consensus') filtered.sort((a,b) => ((b.consensus&&b.consensus.score)||0) - ((a.consensus&&a.consensus.score)||0));
     else if (sort === 'vitality') filtered.sort((a,b) => (b.vitality_score||0) - (a.vitality_score||0));
 
     if (filtered.length === 0 && allTerms.length === 0) {
@@ -301,9 +301,9 @@ function renderTerms() {
         const card = document.createElement('div');
         card.className = 'term-card';
         card.dataset.slug = term.slug;
-        const consensus = term.consensus_score;
-        const badge = consensus != null
-            ? `<span class="consensus-badge ${consensusClass(consensus)}">${consensus.toFixed(1)}</span>`
+        const cScore = term.consensus && term.consensus.score;
+        const badge = cScore != null
+            ? `<span class="consensus-badge ${consensusClass(cScore)}" title="${term.consensus.n_ratings||0} rating${term.consensus.n_ratings===1?'':'s'}">${cScore.toFixed(1)}</span>`
             : '';
         card.innerHTML = `
             <div class="term-card-header">
@@ -329,8 +329,20 @@ function consensusClass(score) {
 function openModal(term) {
     const modal = document.getElementById('modal-overlay');
     const content = document.getElementById('modal-content');
-    const consensus = term.consensus_score != null
-        ? `<span class="consensus-badge ${consensusClass(term.consensus_score)}">${term.consensus_score.toFixed(1)} consensus</span>` : '';
+    const c = term.consensus;
+    const consensus = c && c.score != null
+        ? `<span class="consensus-badge ${consensusClass(c.score)}">${c.score.toFixed(1)} consensus</span>` : '';
+    const consensusBlock = c && c.score != null ? `
+        <h3>Cross-model consensus</h3>
+        <div class="consensus-detail">
+            <div class="consensus-score-large">${c.score.toFixed(1)}<span class="consensus-max">/7</span></div>
+            <div class="consensus-meta">
+                <span class="consensus-agreement consensus-${c.agreement}">${c.agreement} agreement</span>
+                <span class="consensus-count">${c.n_ratings} rating${c.n_ratings === 1 ? '' : 's'}</span>
+            </div>
+            ${(c.models||[]).length ? `<ul class="consensus-models">${c.models.map(m=>`<li><span class="consensus-model-name">${escHtml(m.model)}</span><span class="consensus-model-score">${m.score}</span></li>`).join('')}</ul>` : ''}
+            <a href="api/v1/consensus/${term.slug}.json" class="consensus-link">Full consensus data →</a>
+        </div>` : '';
     content.innerHTML = `
         <h2 id="modal-title">${escHtml(term.name)} <span class="term-type">${escHtml(term.word_type||'noun')}</span> ${consensus}</h2>
         ${term.definition ? `<p><strong>Definition:</strong> ${escHtml(term.definition)}</p>` : ''}
@@ -338,6 +350,7 @@ function openModal(term) {
         ${term.longer_description ? `<p>${escHtml(term.longer_description)}</p>` : ''}
         ${term.example ? `<blockquote>${escHtml(term.example)}</blockquote>` : ''}
         ${(term.tags||[]).length ? `<div class="term-tags">${term.tags.map(t=>`<span class="tag">${escHtml(t)}</span>`).join('')}</div>` : ''}
+        ${consensusBlock}
         <p class="term-source"><a href="api/v1/terms/${term.slug}.json">JSON →</a></p>
     `;
     modal.classList.add('active');

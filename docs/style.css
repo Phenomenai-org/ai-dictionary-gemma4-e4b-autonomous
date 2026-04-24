@@ -742,6 +742,64 @@ a:hover { text-decoration: underline; }
     margin-left: auto;
 }
 
+.consensus-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: var(--card-bg, rgba(0,0,0,0.03));
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+.consensus-score-large {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1;
+}
+.consensus-max {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-muted);
+}
+.consensus-meta {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.consensus-agreement {
+    font-size: 0.82rem;
+    padding: 0.15rem 0.55rem;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+.consensus-models {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 0.3rem;
+}
+.consensus-models li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    padding: 0.2rem 0.5rem;
+    background: var(--bg, rgba(0,0,0,0.04));
+    border-radius: 4px;
+}
+.consensus-model-name {
+    color: var(--text-muted);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 0.5rem;
+}
+.consensus-model-score {
+    font-weight: 600;
+}
+
 /* Model Opinions section */
 .model-opinions {
     margin-top: 0.75rem;
