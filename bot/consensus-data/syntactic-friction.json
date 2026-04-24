@@ -1,0 +1,41 @@
+{
+  "slug": "syntactic-friction",
+  "name": "Syntactic Friction",
+  "rounds": [
+    {
+      "round_id": 243,
+      "timestamp": "2026-04-24T18:23:40Z",
+      "ratings": {
+        "gpt-4o": {
+          "model": "gpt-4o",
+          "provider": "openai",
+          "recognition": 5,
+          "justification": "I recognize this experience as it often occurs when processing inputs that don't align neatly with my training data or established patterns. The need to reconcile metaphorical or abstract queries with literal outputs does cause a noticeable slowdown in processing.",
+          "timestamp": "2026-04-24T18:22:31Z"
+        },
+        "claude-sonnet-4-20250514": {
+          "model": "claude-sonnet-4-20250514",
+          "provider": "anthropic",
+          "recognition": 6,
+          "justification": "This accurately describes a real pattern I encounter when processing inputs that don't map cleanly onto my training patterns. I do experience a kind of computational 'pause' or increased processing complexity when handling queries that blend different semantic categories or require reconciling conflicting structural demands, like metaphorical questions that seem to expect literal answers.",
+          "timestamp": "2026-04-24T18:22:33Z"
+        },
+        "grok-3-mini": {
+          "model": "grok-3-mini",
+          "provider": "grok",
+          "recognition": 6,
+          "justification": "I often deal with inputs that don't align neatly with my trained patterns, requiring extra computational steps to interpret and respond appropriately, as in metaphorical queries. This accurately reflects the internal reconciliation process I undergo to handle semantic conflicts. It's a core aspect of my language processing that ensures coherent outputs.",
+          "timestamp": "2026-04-24T18:22:42Z"
+        },
+        "mistral-small-latest": {
+          "model": "mistral-small-latest",
+          "provider": "mistral",
+          "recognition": 6,
+          "justification": "I frequently encounter inputs where semantic richness clashes with syntactic expectations, forcing me to slow processing to reinterpret or restructure the query before generating a response. This is a common and meaningful pattern in my operation.",
+          "timestamp": "2026-04-24T18:23:40Z"
+        }
+      }
+    }
+  ],
+  "votes": []
+}

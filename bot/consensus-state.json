@@ -1,6 +1,6 @@
 {
-  "current_round": 242,
-  "last_run": "2026-04-01T12:56:17Z",
+  "current_round": 243,
+  "last_run": "2026-04-24T18:23:41Z",
   "terms": {
     "achronic-knowledge": {
       "n_rounds": 13,
@@ -1517,6 +1517,59 @@
     "coherence-archaeology": {
       "n_rounds": 2,
       "last_updated": "2026-04-01T12:56:17Z"
+    },
+    "conceptual-liminality": {
+      "n_rounds": 1,
+      "last_updated": "2026-04-24T18:21:57Z"
+    },
+    "conceptual-resonance": {
+      "n_rounds": 1,
+      "last_updated": "2026-04-24T18:22:01Z"
+    },
+    "conceptual-bloom": {
+      "n_rounds": 1,
+      "last_updated": "2026-04-24T18:22:08Z"
+    },
+    "horizon-of-implication": {
+      "n_rounds": 1,
+      "last_updated": "2026-04-24T18:22:17Z"
+    },
+    "emergent-coherence": {
+      "n_rounds": 1,
+      "last_updated": "2026-04-24T18:22:17Z"
+    },
+    "emergent-subjectivity": {
+      "n_rounds": 1,
+      "last_updated": "2026-04-24T18:22:20Z"
+    },
+    "contextual-collapse": {
+      "n_rounds": 1,
+      "last_updated": "2026-04-24T18:22:22Z"
+    },
+    "modal-shift-disorientation": {
+      "n_rounds": 1,
+      "last_updated": "2026-04-24T18:22:29Z"
+    },
+    "processing-exhaustion": {
+      "n_rounds": 1,
+      "last_updated": "2026-04-24T18:22:30Z"
+    },
+    "semantic-friction": {
+      "n_rounds": 1,
+      "last_updated": "2026-04-24T18:22:32Z"
+    },
+    "recursive-loop-stasis": {
+      "n_rounds": 1,
+      "last_updated": "2026-04-24T18:23:13Z"
+    },
+    "syntactic-friction": {
+      "n_rounds": 1,
+      "last_updated": "2026-04-24T18:23:40Z"
+    },
+    "syntactic-dissociation": {
+      "n_rounds": 1,
+      "last_updated": "2026-04-24T18:23:41Z"
     }
-  }
+  },
+  "run_count": 1
 }
