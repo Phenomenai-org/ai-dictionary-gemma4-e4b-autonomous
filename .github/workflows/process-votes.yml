@@ -154,7 +154,7 @@ jobs:
 
           MAX_RETRIES=5
           for attempt in $(seq 1 $MAX_RETRIES); do
-            git pull --rebase origin main && git push && exit 0
+            git pull --rebase --autostash origin main && git push && exit 0
             git rebase --abort 2>/dev/null || true
             BASE=$((2 + attempt * 2))
             JITTER=$((RANDOM % (3 + attempt * 2)))
