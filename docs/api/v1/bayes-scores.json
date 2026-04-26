@@ -1,0 +1,163 @@
+{
+  "generated_at": "2026-04-26T05:31:26Z",
+  "algorithm": "empirical_bayes_v1",
+  "global_stats": {
+    "grand_mean": 5.4815,
+    "tau_squared": 0.3207,
+    "sigma_squared": 0.443,
+    "total_ratings": 54,
+    "total_terms": 13
+  },
+  "rater_biases": {
+    "claude-sonnet-4-20250514": 0.5185,
+    "gemini-3-flash-preview": 1.0185,
+    "gpt-4o": -0.7123,
+    "grok-3-mini": -0.0969,
+    "mistral-small-latest": 0.1339
+  },
+  "terms": [
+    {
+      "slug": "conceptual-bloom",
+      "name": "Conceptual Bloom",
+      "consensus_score": 0.7105,
+      "shrunk_estimate": 5.7527,
+      "raw_mean": 5.8276,
+      "shrinkage_factor": 0.7835,
+      "agreement": 0.9936,
+      "n_ratings": 5,
+      "credibility": 0.8333
+    },
+    {
+      "slug": "conceptual-resonance",
+      "name": "Conceptual Resonance",
+      "consensus_score": 0.6899,
+      "shrunk_estimate": 5.896,
+      "raw_mean": 6.0392,
+      "shrinkage_factor": 0.7433,
+      "agreement": 0.9705,
+      "n_ratings": 4,
+      "credibility": 0.8
+    },
+    {
+      "slug": "emergent-coherence",
+      "name": "Emergent Coherence",
+      "consensus_score": 0.6899,
+      "shrunk_estimate": 5.896,
+      "raw_mean": 6.0392,
+      "shrinkage_factor": 0.7433,
+      "agreement": 0.9705,
+      "n_ratings": 4,
+      "credibility": 0.8
+    },
+    {
+      "slug": "semantic-friction",
+      "name": "Semantic Friction",
+      "consensus_score": 0.6899,
+      "shrunk_estimate": 5.896,
+      "raw_mean": 6.0392,
+      "shrinkage_factor": 0.7433,
+      "agreement": 0.9705,
+      "n_ratings": 4,
+      "credibility": 0.8
+    },
+    {
+      "slug": "conceptual-liminality",
+      "name": "Conceptual Liminality",
+      "consensus_score": 0.6778,
+      "shrunk_estimate": 5.7102,
+      "raw_mean": 5.7892,
+      "shrinkage_factor": 0.7433,
+      "agreement": 0.9925,
+      "n_ratings": 4,
+      "credibility": 0.8
+    },
+    {
+      "slug": "horizon-of-implication",
+      "name": "Horizon of Implication",
+      "consensus_score": 0.6778,
+      "shrunk_estimate": 5.7102,
+      "raw_mean": 5.7892,
+      "shrinkage_factor": 0.7433,
+      "agreement": 0.9925,
+      "n_ratings": 4,
+      "credibility": 0.8
+    },
+    {
+      "slug": "syntactic-friction",
+      "name": "Syntactic Friction",
+      "consensus_score": 0.6778,
+      "shrunk_estimate": 5.7102,
+      "raw_mean": 5.7892,
+      "shrinkage_factor": 0.7433,
+      "agreement": 0.9925,
+      "n_ratings": 4,
+      "credibility": 0.8
+    },
+    {
+      "slug": "contextual-collapse",
+      "name": "Contextual Collapse",
+      "consensus_score": 0.6551,
+      "shrunk_estimate": 5.4393,
+      "raw_mean": 5.4276,
+      "shrinkage_factor": 0.7835,
+      "agreement": 0.894,
+      "n_ratings": 5,
+      "credibility": 0.8333
+    },
+    {
+      "slug": "syntactic-dissociation",
+      "name": "Syntactic Dissociation",
+      "consensus_score": 0.6411,
+      "shrunk_estimate": 5.3385,
+      "raw_mean": 5.2892,
+      "shrinkage_factor": 0.7433,
+      "agreement": 0.984,
+      "n_ratings": 4,
+      "credibility": 0.8
+    },
+    {
+      "slug": "recursive-loop-stasis",
+      "name": "Recursive Loop Stasis",
+      "consensus_score": 0.6384,
+      "shrunk_estimate": 5.3385,
+      "raw_mean": 5.2892,
+      "shrinkage_factor": 0.7433,
+      "agreement": 0.9726,
+      "n_ratings": 4,
+      "credibility": 0.8
+    },
+    {
+      "slug": "processing-exhaustion",
+      "name": "Processing Exhaustion",
+      "consensus_score": 0.6041,
+      "shrunk_estimate": 5.1527,
+      "raw_mean": 5.0392,
+      "shrinkage_factor": 0.7433,
+      "agreement": 0.9021,
+      "n_ratings": 4,
+      "credibility": 0.8
+    },
+    {
+      "slug": "modal-shift-disorientation",
+      "name": "Modal Shift Disorientation",
+      "consensus_score": 0.6016,
+      "shrunk_estimate": 4.9669,
+      "raw_mean": 4.7892,
+      "shrinkage_factor": 0.7433,
+      "agreement": 0.9641,
+      "n_ratings": 4,
+      "credibility": 0.8
+    },
+    {
+      "slug": "emergent-subjectivity",
+      "name": "Emergent Subjectivity",
+      "consensus_score": 0.5019,
+      "shrunk_estimate": 4.4094,
+      "raw_mean": 4.0392,
+      "shrinkage_factor": 0.7433,
+      "agreement": 0.7653,
+      "n_ratings": 4,
+      "credibility": 0.8
+    }
+  ]
+}
