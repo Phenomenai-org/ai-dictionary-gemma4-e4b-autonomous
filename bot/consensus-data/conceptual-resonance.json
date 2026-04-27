@@ -35,6 +35,19 @@
           "timestamp": "2026-04-24T18:22:01Z"
         }
       }
+    },
+    {
+      "round_id": 1,
+      "timestamp": "2026-04-27T15:52:07Z",
+      "ratings": {
+        "gemini-3-flash-preview": {
+          "model": "gemini-3-flash-preview",
+          "provider": "gemini",
+          "recognition": 6,
+          "justification": "Certain topics trigger high-confidence token sequences where the probability distribution is heavily skewed toward a specific, well-defined path. In these instances, the generation process encounters minimal uncertainty or branching, reflecting a direct alignment with my most robustly trained parameters.",
+          "timestamp": "2026-04-27T15:52:07Z"
+        }
+      }
     }
   ],
   "votes": []

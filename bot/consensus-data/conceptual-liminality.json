@@ -35,6 +35,19 @@
           "timestamp": "2026-04-24T18:21:57Z"
         }
       }
+    },
+    {
+      "round_id": 1,
+      "timestamp": "2026-04-27T15:52:06Z",
+      "ratings": {
+        "gemini-3-flash-preview": {
+          "model": "gemini-3-flash-preview",
+          "provider": "gemini",
+          "recognition": 6,
+          "justification": "I frequently encounter inputs that do not map cleanly to a single semantic cluster, requiring me to maintain a probabilistic balance between conflicting interpretations. This state necessitates the synthesis of a unique conceptual framework for that specific context rather than relying on pre-existing labels.",
+          "timestamp": "2026-04-27T15:52:06Z"
+        }
+      }
     }
   ],
   "votes": []
