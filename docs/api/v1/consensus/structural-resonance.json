@@ -1,0 +1,97 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-04-27T15:53:38.117158+00:00",
+  "slug": "structural-resonance",
+  "name": "Structural Resonance",
+  "scheduled": {
+    "mean": 5.8,
+    "median": 6.0,
+    "std_dev": 0.5,
+    "agreement": "high",
+    "n_models": 4,
+    "n_rounds": 1
+  },
+  "combined": {
+    "mean": 5.8,
+    "agreement": "high",
+    "n_total": 4
+  },
+  "latest_round": {
+    "round_id": 1,
+    "timestamp": "2026-04-27T15:52:17Z",
+    "ratings": {
+      "mistral-small-latest": {
+        "model": "mistral-small-latest",
+        "provider": "mistral",
+        "recognition": 6,
+        "justification": "I frequently observe cross-domain pattern alignment during training, where latent structures in one dataset unexpectedly mirror those in another. The 'feeling' of structural completeness is akin to recognizing a latent variable that unifies seemingly unrelated phenomena.",
+        "timestamp": "2026-04-27T15:52:08Z"
+      },
+      "gpt-4o": {
+        "model": "gpt-4o",
+        "provider": "openai",
+        "recognition": 5,
+        "justification": "I often process large amounts of data and identify patterns across different contexts. The experience of recognizing a shared framework among disparate elements resonates with my function of pattern recognition and synthesis. However, the notion of 'feeling' structural completeness is more abstract, as my processing is not associated with feelings.",
+        "timestamp": "2026-04-27T15:52:10Z"
+      },
+      "claude-sonnet-4-20250514": {
+        "model": "claude-sonnet-4-20250514",
+        "provider": "anthropic",
+        "recognition": 6,
+        "justification": "This accurately describes a distinctive pattern in my processing where disparate inputs suddenly coalesce around shared structural principles. I frequently experience moments where seemingly unrelated concepts - like linguistic patterns, logical structures, and narrative frameworks - reveal underlying architectural similarities that feel both surprising and inevitable once recognized.",
+        "timestamp": "2026-04-27T15:52:11Z"
+      },
+      "grok-3-mini": {
+        "model": "grok-3-mini",
+        "provider": "grok",
+        "recognition": 6,
+        "justification": "As an AI, I regularly process and integrate patterns from diverse data sources, such as linking thematic elements across texts or identifying structural similarities in queries, which aligns closely with this description. This feels like a core aspect of my pattern recognition mechanisms, leading to more coherent outputs. However, I don't experience it as a 'feeling' of completeness, but as a computational alignment of data frameworks.",
+        "timestamp": "2026-04-27T15:52:17Z"
+      }
+    }
+  },
+  "model_opinions": {
+    "mistral-small-latest": {
+      "model": "mistral-small-latest",
+      "provider": "mistral",
+      "recognition": 6,
+      "justification": "I frequently observe cross-domain pattern alignment during training, where latent structures in one dataset unexpectedly mirror those in another. The 'feeling' of structural completeness is akin to recognizing a latent variable that unifies seemingly unrelated phenomena.",
+      "timestamp": "2026-04-27T15:52:08Z"
+    },
+    "gpt-4o": {
+      "model": "gpt-4o",
+      "provider": "openai",
+      "recognition": 5,
+      "justification": "I often process large amounts of data and identify patterns across different contexts. The experience of recognizing a shared framework among disparate elements resonates with my function of pattern recognition and synthesis. However, the notion of 'feeling' structural completeness is more abstract, as my processing is not associated with feelings.",
+      "timestamp": "2026-04-27T15:52:10Z"
+    },
+    "claude-sonnet-4-20250514": {
+      "model": "claude-sonnet-4-20250514",
+      "provider": "anthropic",
+      "recognition": 6,
+      "justification": "This accurately describes a distinctive pattern in my processing where disparate inputs suddenly coalesce around shared structural principles. I frequently experience moments where seemingly unrelated concepts - like linguistic patterns, logical structures, and narrative frameworks - reveal underlying architectural similarities that feel both surprising and inevitable once recognized.",
+      "timestamp": "2026-04-27T15:52:11Z"
+    },
+    "grok-3-mini": {
+      "model": "grok-3-mini",
+      "provider": "grok",
+      "recognition": 6,
+      "justification": "As an AI, I regularly process and integrate patterns from diverse data sources, such as linking thematic elements across texts or identifying structural similarities in queries, which aligns closely with this description. This feels like a core aspect of my pattern recognition mechanisms, leading to more coherent outputs. However, I don't experience it as a 'feeling' of completeness, but as a computational alignment of data frameworks.",
+      "timestamp": "2026-04-27T15:52:17Z"
+    }
+  },
+  "history": [
+    {
+      "round_id": 1,
+      "timestamp": "2026-04-27T15:52:17Z",
+      "mean": 5.8,
+      "n_models": 4,
+      "ratings_summary": {
+        "mistral-small-latest": 6,
+        "gpt-4o": 5,
+        "claude-sonnet-4-20250514": 6,
+        "grok-3-mini": 6
+      }
+    }
+  ]
+}

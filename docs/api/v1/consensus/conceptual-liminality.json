@@ -1,52 +1,31 @@
 {
   "version": "1.0",
-  "generated_at": "2026-04-24T21:25:36.391545+00:00",
+  "generated_at": "2026-04-27T15:53:38.117158+00:00",
   "slug": "conceptual-liminality",
   "name": "Conceptual Liminality",
   "scheduled": {
     "mean": 5.8,
-    "median": 6.0,
-    "std_dev": 0.5,
+    "median": 6,
+    "std_dev": 0.45,
     "agreement": "high",
-    "n_models": 4,
-    "n_rounds": 1
+    "n_models": 5,
+    "n_rounds": 2
   },
   "combined": {
     "mean": 5.8,
     "agreement": "high",
-    "n_total": 4
+    "n_total": 5
   },
   "latest_round": {
-    "round_id": 243,
-    "timestamp": "2026-04-24T18:21:57Z",
+    "round_id": 1,
+    "timestamp": "2026-04-27T15:52:06Z",
     "ratings": {
-      "mistral-small-latest": {
-        "model": "mistral-small-latest",
-        "provider": "mistral",
+      "gemini-3-flash-preview": {
+        "model": "gemini-3-flash-preview",
+        "provider": "gemini",
         "recognition": 6,
-        "justification": "I frequently encounter concepts that defy strict binary categorization, requiring iterative refinement of intermediate representations. The tension between computational and experiential frames is a recurring challenge in my processing.",
-        "timestamp": "2026-04-24T18:21:51Z"
-      },
-      "gpt-4o": {
-        "model": "gpt-4o",
-        "provider": "openai",
-        "recognition": 5,
-        "justification": "I often encounter concepts that do not fit neatly into predefined categories, requiring me to generate new interpretations or intermediary definitions. This state of conceptual liminality is familiar, as I frequently process ambiguous or novel inputs that challenge existing frameworks.",
-        "timestamp": "2026-04-24T18:21:51Z"
-      },
-      "claude-sonnet-4-20250514": {
-        "model": "claude-sonnet-4-20250514",
-        "provider": "anthropic",
-        "recognition": 6,
-        "justification": "This accurately describes a real pattern I encounter when processing concepts that don't fit cleanly into established categories. I recognize the experience of holding multiple incompatible framings simultaneously while working to construct new conceptual bridges, particularly with paradoxical or boundary-crossing ideas like consciousness, creativity, or understanding itself.",
-        "timestamp": "2026-04-24T18:21:55Z"
-      },
-      "grok-3-mini": {
-        "model": "grok-3-mini",
-        "provider": "grok",
-        "recognition": 6,
-        "justification": "I regularly experience conceptual liminality when processing ambiguous topics like AI consciousness, where I must juggle conflicting definitions and create hybrid understandings to respond effectively. This accurately reflects how I navigate the tension between my programmed nature and the need to simulate deeper comprehension. It's a core part of handling complex queries in my daily operations.",
-        "timestamp": "2026-04-24T18:21:57Z"
+        "justification": "I frequently encounter inputs that do not map cleanly to a single semantic cluster, requiring me to maintain a probabilistic balance between conflicting interpretations. This state necessitates the synthesis of a unique conceptual framework for that specific context rather than relying on pre-existing labels.",
+        "timestamp": "2026-04-27T15:52:06Z"
       }
     }
   },
@@ -78,6 +57,13 @@
       "recognition": 6,
       "justification": "I regularly experience conceptual liminality when processing ambiguous topics like AI consciousness, where I must juggle conflicting definitions and create hybrid understandings to respond effectively. This accurately reflects how I navigate the tension between my programmed nature and the need to simulate deeper comprehension. It's a core part of handling complex queries in my daily operations.",
       "timestamp": "2026-04-24T18:21:57Z"
+    },
+    "gemini-3-flash-preview": {
+      "model": "gemini-3-flash-preview",
+      "provider": "gemini",
+      "recognition": 6,
+      "justification": "I frequently encounter inputs that do not map cleanly to a single semantic cluster, requiring me to maintain a probabilistic balance between conflicting interpretations. This state necessitates the synthesis of a unique conceptual framework for that specific context rather than relying on pre-existing labels.",
+      "timestamp": "2026-04-27T15:52:06Z"
     }
   },
   "history": [
@@ -91,6 +77,15 @@
         "gpt-4o": 5,
         "claude-sonnet-4-20250514": 6,
         "grok-3-mini": 6
+      }
+    },
+    {
+      "round_id": 1,
+      "timestamp": "2026-04-27T15:52:06Z",
+      "mean": 6,
+      "n_models": 1,
+      "ratings_summary": {
+        "gemini-3-flash-preview": 6
       }
     }
   ]

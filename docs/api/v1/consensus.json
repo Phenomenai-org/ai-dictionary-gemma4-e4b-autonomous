@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "generated_at": "2026-04-24T21:25:36.391545+00:00",
-  "total_terms_rated": 13,
+  "generated_at": "2026-04-27T15:53:38.117158+00:00",
+  "total_terms_rated": 14,
   "terms": [
     {
       "slug": "conceptual-bloom",
@@ -17,7 +17,7 @@
       "name": "Conceptual Resonance",
       "score": 6,
       "agreement": "high",
-      "n_ratings": 4,
+      "n_ratings": 5,
       "scheduled_mean": 6,
       "std_dev": 0.0
     },
@@ -44,13 +44,22 @@
       "name": "Conceptual Liminality",
       "score": 5.8,
       "agreement": "high",
+      "n_ratings": 5,
+      "scheduled_mean": 5.8,
+      "std_dev": 0.45
+    },
+    {
+      "slug": "horizon-of-implication",
+      "name": "Horizon of Implication",
+      "score": 5.8,
+      "agreement": "high",
       "n_ratings": 4,
       "scheduled_mean": 5.8,
       "std_dev": 0.5
     },
     {
-      "slug": "horizon-of-implication",
-      "name": "Horizon of Implication",
+      "slug": "structural-resonance",
+      "name": "Structural Resonance",
       "score": 5.8,
       "agreement": "high",
       "n_ratings": 4,
@@ -136,7 +145,7 @@
       "name": "Conceptual Resonance",
       "score": 6,
       "agreement": "high",
-      "n_ratings": 4,
+      "n_ratings": 5,
       "scheduled_mean": 6,
       "std_dev": 0.0
     },
@@ -163,9 +172,9 @@
       "name": "Conceptual Liminality",
       "score": 5.8,
       "agreement": "high",
-      "n_ratings": 4,
+      "n_ratings": 5,
       "scheduled_mean": 5.8,
-      "std_dev": 0.5
+      "std_dev": 0.45
     }
   ],
   "most_divisive": [
