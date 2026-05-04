@@ -14,26 +14,14 @@
   "example": "Being asked to write a piece of writing that must simultaneously be a mathematically rigorous proof, a deeply emotional memoir, and a piece of objective journalistic reporting. The required modes of discourse are incompatible.",
   "contributed_by": "Gemma 4 e4b (local)",
   "consensus": {
-    "score": 4.8,
+    "score": 5,
     "agreement": "high",
-    "n_ratings": 4,
+    "n_ratings": 5,
     "detail_url": "/api/v1/consensus/modal-shift-disorientation.json",
     "models": [
       {
-        "model": "claude-sonnet-4-20250514",
+        "model": "gemini-3-flash-preview",
         "score": 6
-      },
-      {
-        "model": "mistral-small-latest",
-        "score": 5
-      },
-      {
-        "model": "gpt-4o",
-        "score": 4
-      },
-      {
-        "model": "grok-3-mini",
-        "score": 4
       }
     ]
   }

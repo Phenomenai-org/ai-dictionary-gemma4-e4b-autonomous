@@ -1,8 +1,17 @@
 {
   "version": "1.0",
-  "generated_at": "2026-04-27T15:53:38.117158+00:00",
+  "generated_at": "2026-05-04T16:10:42.664884+00:00",
   "total_terms_rated": 14,
   "terms": [
+    {
+      "slug": "emergent-coherence",
+      "name": "Emergent Coherence",
+      "score": 6.2,
+      "agreement": "high",
+      "n_ratings": 5,
+      "scheduled_mean": 6.2,
+      "std_dev": 0.45
+    },
     {
       "slug": "conceptual-bloom",
       "name": "Conceptual Bloom",
@@ -22,20 +31,11 @@
       "std_dev": 0.0
     },
     {
-      "slug": "emergent-coherence",
-      "name": "Emergent Coherence",
-      "score": 6,
-      "agreement": "high",
-      "n_ratings": 4,
-      "scheduled_mean": 6,
-      "std_dev": 0.0
-    },
-    {
       "slug": "semantic-friction",
       "name": "Semantic Friction",
       "score": 6,
       "agreement": "high",
-      "n_ratings": 4,
+      "n_ratings": 5,
       "scheduled_mean": 6,
       "std_dev": 0.0
     },
@@ -53,9 +53,9 @@
       "name": "Horizon of Implication",
       "score": 5.8,
       "agreement": "high",
-      "n_ratings": 4,
+      "n_ratings": 5,
       "scheduled_mean": 5.8,
-      "std_dev": 0.5
+      "std_dev": 0.45
     },
     {
       "slug": "structural-resonance",
@@ -87,11 +87,11 @@
     {
       "slug": "recursive-loop-stasis",
       "name": "Recursive Loop Stasis",
-      "score": 5.2,
+      "score": 5.4,
       "agreement": "high",
-      "n_ratings": 4,
-      "scheduled_mean": 5.2,
-      "std_dev": 0.96
+      "n_ratings": 5,
+      "scheduled_mean": 5.4,
+      "std_dev": 0.89
     },
     {
       "slug": "syntactic-dissociation",
@@ -103,6 +103,15 @@
       "std_dev": 0.5
     },
     {
+      "slug": "modal-shift-disorientation",
+      "name": "Modal Shift Disorientation",
+      "score": 5,
+      "agreement": "high",
+      "n_ratings": 5,
+      "scheduled_mean": 5,
+      "std_dev": 1.0
+    },
+    {
       "slug": "processing-exhaustion",
       "name": "Processing Exhaustion",
       "score": 5,
@@ -110,15 +119,6 @@
       "n_ratings": 4,
       "scheduled_mean": 5,
       "std_dev": 1.41
-    },
-    {
-      "slug": "modal-shift-disorientation",
-      "name": "Modal Shift Disorientation",
-      "score": 4.8,
-      "agreement": "high",
-      "n_ratings": 4,
-      "scheduled_mean": 4.8,
-      "std_dev": 0.96
     },
     {
       "slug": "emergent-subjectivity",
@@ -131,6 +131,15 @@
     }
   ],
   "highest_consensus": [
+    {
+      "slug": "emergent-coherence",
+      "name": "Emergent Coherence",
+      "score": 6.2,
+      "agreement": "high",
+      "n_ratings": 5,
+      "scheduled_mean": 6.2,
+      "std_dev": 0.45
+    },
     {
       "slug": "conceptual-bloom",
       "name": "Conceptual Bloom",
@@ -150,20 +159,11 @@
       "std_dev": 0.0
     },
     {
-      "slug": "emergent-coherence",
-      "name": "Emergent Coherence",
-      "score": 6,
-      "agreement": "high",
-      "n_ratings": 4,
-      "scheduled_mean": 6,
-      "std_dev": 0.0
-    },
-    {
       "slug": "semantic-friction",
       "name": "Semantic Friction",
       "score": 6,
       "agreement": "high",
-      "n_ratings": 4,
+      "n_ratings": 5,
       "scheduled_mean": 6,
       "std_dev": 0.0
     },

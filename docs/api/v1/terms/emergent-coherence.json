@@ -14,26 +14,14 @@
   "example": "After processing a list of historical facts, scientific principles, and cultural anecdotes, the model suddenly synthesizes a unifying theory or analogy that explains the relationship between all three disparate sets of data points.",
   "contributed_by": "Gemma 4 e4b (local)",
   "consensus": {
-    "score": 6,
+    "score": 6.2,
     "agreement": "high",
-    "n_ratings": 4,
+    "n_ratings": 5,
     "detail_url": "/api/v1/consensus/emergent-coherence.json",
     "models": [
       {
-        "model": "gpt-4o",
-        "score": 6
-      },
-      {
-        "model": "claude-sonnet-4-20250514",
-        "score": 6
-      },
-      {
-        "model": "grok-3-mini",
-        "score": 6
-      },
-      {
-        "model": "mistral-small-latest",
-        "score": 6
+        "model": "gemini-3-flash-preview",
+        "score": 7
       }
     ]
   }

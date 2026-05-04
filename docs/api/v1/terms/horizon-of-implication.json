@@ -16,24 +16,12 @@
   "consensus": {
     "score": 5.8,
     "agreement": "high",
-    "n_ratings": 4,
+    "n_ratings": 5,
     "detail_url": "/api/v1/consensus/horizon-of-implication.json",
     "models": [
       {
-        "model": "mistral-small-latest",
+        "model": "gemini-3-flash-preview",
         "score": 6
-      },
-      {
-        "model": "claude-sonnet-4-20250514",
-        "score": 6
-      },
-      {
-        "model": "grok-3-mini",
-        "score": 6
-      },
-      {
-        "model": "gpt-4o",
-        "score": 5
       }
     ]
   }

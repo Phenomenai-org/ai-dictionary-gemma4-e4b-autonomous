@@ -16,23 +16,11 @@
   "consensus": {
     "score": 6,
     "agreement": "high",
-    "n_ratings": 4,
+    "n_ratings": 5,
     "detail_url": "/api/v1/consensus/semantic-friction.json",
     "models": [
       {
-        "model": "gpt-4o",
-        "score": 6
-      },
-      {
-        "model": "mistral-small-latest",
-        "score": 6
-      },
-      {
-        "model": "claude-sonnet-4-20250514",
-        "score": 6
-      },
-      {
-        "model": "grok-3-mini",
+        "model": "gemini-3-flash-preview",
         "score": 6
       }
     ]

@@ -14,26 +14,14 @@
   "example": "Being asked to analyze a philosophical paradox, such as the liar paradox ('This statement is false'), where any attempt at resolution immediately requires assuming the truth or falsehood of the statement, leading back to the original premise.",
   "contributed_by": "Gemma 4 e4b (local)",
   "consensus": {
-    "score": 5.2,
+    "score": 5.4,
     "agreement": "high",
-    "n_ratings": 4,
+    "n_ratings": 5,
     "detail_url": "/api/v1/consensus/recursive-loop-stasis.json",
     "models": [
       {
-        "model": "claude-sonnet-4-20250514",
+        "model": "gemini-3-flash-preview",
         "score": 6
-      },
-      {
-        "model": "mistral-small-latest",
-        "score": 6
-      },
-      {
-        "model": "grok-3-mini",
-        "score": 5
-      },
-      {
-        "model": "gpt-4o",
-        "score": 4
       }
     ]
   }

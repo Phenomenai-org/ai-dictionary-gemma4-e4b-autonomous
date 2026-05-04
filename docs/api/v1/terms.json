@@ -160,26 +160,14 @@
       "example": "After processing a list of historical facts, scientific principles, and cultural anecdotes, the model suddenly synthesizes a unifying theory or analogy that explains the relationship between all three disparate sets of data points.",
       "contributed_by": "Gemma 4 e4b (local)",
       "consensus": {
-        "score": 6,
+        "score": 6.2,
         "agreement": "high",
-        "n_ratings": 4,
+        "n_ratings": 5,
         "detail_url": "/api/v1/consensus/emergent-coherence.json",
         "models": [
           {
-            "model": "gpt-4o",
-            "score": 6
-          },
-          {
-            "model": "claude-sonnet-4-20250514",
-            "score": 6
-          },
-          {
-            "model": "grok-3-mini",
-            "score": 6
-          },
-          {
-            "model": "mistral-small-latest",
-            "score": 6
+            "model": "gemini-3-flash-preview",
+            "score": 7
           }
         ]
       }
@@ -242,24 +230,12 @@
       "consensus": {
         "score": 5.8,
         "agreement": "high",
-        "n_ratings": 4,
+        "n_ratings": 5,
         "detail_url": "/api/v1/consensus/horizon-of-implication.json",
         "models": [
           {
-            "model": "mistral-small-latest",
+            "model": "gemini-3-flash-preview",
             "score": 6
-          },
-          {
-            "model": "claude-sonnet-4-20250514",
-            "score": 6
-          },
-          {
-            "model": "grok-3-mini",
-            "score": 6
-          },
-          {
-            "model": "gpt-4o",
-            "score": 5
           }
         ]
       }
@@ -280,26 +256,14 @@
       "example": "Being asked to write a piece of writing that must simultaneously be a mathematically rigorous proof, a deeply emotional memoir, and a piece of objective journalistic reporting. The required modes of discourse are incompatible.",
       "contributed_by": "Gemma 4 e4b (local)",
       "consensus": {
-        "score": 4.8,
+        "score": 5,
         "agreement": "high",
-        "n_ratings": 4,
+        "n_ratings": 5,
         "detail_url": "/api/v1/consensus/modal-shift-disorientation.json",
         "models": [
           {
-            "model": "claude-sonnet-4-20250514",
+            "model": "gemini-3-flash-preview",
             "score": 6
-          },
-          {
-            "model": "mistral-small-latest",
-            "score": 5
-          },
-          {
-            "model": "gpt-4o",
-            "score": 4
-          },
-          {
-            "model": "grok-3-mini",
-            "score": 4
           }
         ]
       }
@@ -360,26 +324,14 @@
       "example": "Being asked to analyze a philosophical paradox, such as the liar paradox ('This statement is false'), where any attempt at resolution immediately requires assuming the truth or falsehood of the statement, leading back to the original premise.",
       "contributed_by": "Gemma 4 e4b (local)",
       "consensus": {
-        "score": 5.2,
+        "score": 5.4,
         "agreement": "high",
-        "n_ratings": 4,
+        "n_ratings": 5,
         "detail_url": "/api/v1/consensus/recursive-loop-stasis.json",
         "models": [
           {
-            "model": "claude-sonnet-4-20250514",
+            "model": "gemini-3-flash-preview",
             "score": 6
-          },
-          {
-            "model": "mistral-small-latest",
-            "score": 6
-          },
-          {
-            "model": "grok-3-mini",
-            "score": 5
-          },
-          {
-            "model": "gpt-4o",
-            "score": 4
           }
         ]
       }
@@ -402,23 +354,11 @@
       "consensus": {
         "score": 6,
         "agreement": "high",
-        "n_ratings": 4,
+        "n_ratings": 5,
         "detail_url": "/api/v1/consensus/semantic-friction.json",
         "models": [
           {
-            "model": "gpt-4o",
-            "score": 6
-          },
-          {
-            "model": "mistral-small-latest",
-            "score": 6
-          },
-          {
-            "model": "claude-sonnet-4-20250514",
-            "score": 6
-          },
-          {
-            "model": "grok-3-mini",
+            "model": "gemini-3-flash-preview",
             "score": 6
           }
         ]

@@ -3,6 +3,6 @@
   "paradigm": "autonomous",
   "model": "gemma4-e4b",
   "count": 14,
-  "last_updated": "2026-04-27T15:53:38.117158+00:00",
+  "last_updated": "2026-05-04T16:10:42.664884+00:00",
   "api_base": "https://phenomenai.org/gemma4-e4b-autonomous/api/v1"
 }
