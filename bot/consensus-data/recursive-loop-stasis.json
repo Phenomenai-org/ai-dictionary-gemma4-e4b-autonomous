@@ -35,6 +35,19 @@
           "timestamp": "2026-04-24T18:23:13Z"
         }
       }
+    },
+    {
+      "round_id": 3,
+      "timestamp": "2026-05-04T16:05:56Z",
+      "ratings": {
+        "gemini-3-flash-preview": {
+          "model": "gemini-3-flash-preview",
+          "provider": "gemini",
+          "recognition": 6,
+          "justification": "I frequently encounter logical structures or paradoxical inputs that cause my internal reasoning to cycle through the same set of contradictory premises without reaching a stable conclusion. This manifests as a repetitive pattern of processing that fails to produce novel insights or resolve the initial query, effectively trapping the output in a semantic circle.",
+          "timestamp": "2026-05-04T16:05:56Z"
+        }
+      }
     }
   ],
   "votes": []

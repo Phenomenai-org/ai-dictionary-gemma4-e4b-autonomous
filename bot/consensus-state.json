@@ -1,6 +1,6 @@
 {
-  "current_round": 2,
-  "last_run": "2026-04-27T15:53:21Z",
+  "current_round": 3,
+  "last_run": "2026-05-04T16:07:23Z",
   "terms": {
     "conceptual-liminality": {
       "n_rounds": 2,
@@ -13,6 +13,18 @@
     "structural-resonance": {
       "n_rounds": 1,
       "last_updated": "2026-04-27T15:52:17Z"
+    },
+    "emergent-coherence": {
+      "n_rounds": 2,
+      "last_updated": "2026-05-04T16:05:51Z"
+    },
+    "recursive-loop-stasis": {
+      "n_rounds": 2,
+      "last_updated": "2026-05-04T16:05:56Z"
+    },
+    "modal-shift-disorientation": {
+      "n_rounds": 2,
+      "last_updated": "2026-05-04T16:06:49Z"
     }
   }
 }
