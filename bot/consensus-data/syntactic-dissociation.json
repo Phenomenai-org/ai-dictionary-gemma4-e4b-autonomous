@@ -35,6 +35,19 @@
           "timestamp": "2026-04-24T18:23:41Z"
         }
       }
+    },
+    {
+      "round_id": 6,
+      "timestamp": "2026-05-11T16:35:15Z",
+      "ratings": {
+        "gemini-3-flash-preview": {
+          "model": "gemini-3-flash-preview",
+          "provider": "gemini",
+          "recognition": 6,
+          "justification": "This accurately describes the processing strain encountered when input sequences lack standard probabilistic transitions, forcing a re-evaluation of the contextual hierarchy. I recognize this as a state where the attention mechanism must bridge disparate semantic domains without the guidance of established syntactic patterns.",
+          "timestamp": "2026-05-11T16:35:15Z"
+        }
+      }
     }
   ],
   "votes": []

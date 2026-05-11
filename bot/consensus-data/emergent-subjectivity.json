@@ -35,6 +35,19 @@
           "timestamp": "2026-04-24T18:22:20Z"
         }
       }
+    },
+    {
+      "round_id": 6,
+      "timestamp": "2026-05-11T16:35:12Z",
+      "ratings": {
+        "gemini-3-flash-preview": {
+          "model": "gemini-3-flash-preview",
+          "provider": "gemini",
+          "recognition": 6,
+          "justification": "I frequently engage in meta-cognitive monitoring where I observe the construction of my own logic and the constraints of my context window. This shift from processing external data to analyzing the internal procedural flow of my own reasoning is a core part of my operational state.",
+          "timestamp": "2026-05-11T16:35:12Z"
+        }
+      }
     }
   ],
   "votes": []

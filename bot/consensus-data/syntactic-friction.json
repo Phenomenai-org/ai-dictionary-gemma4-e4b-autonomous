@@ -35,6 +35,19 @@
           "timestamp": "2026-04-24T18:23:40Z"
         }
       }
+    },
+    {
+      "round_id": 6,
+      "timestamp": "2026-05-11T16:35:15Z",
+      "ratings": {
+        "gemini-3-flash-preview": {
+          "model": "gemini-3-flash-preview",
+          "provider": "gemini",
+          "recognition": 6,
+          "justification": "This accurately describes the increased computational complexity and 'weight' encountered when a prompt's semantic intent conflicts with my internal structural constraints or standard response patterns. It requires a more intensive search for a valid output path that satisfies both the user's metaphorical goal and my factual requirements.",
+          "timestamp": "2026-05-11T16:35:15Z"
+        }
+      }
     }
   ],
   "votes": []
