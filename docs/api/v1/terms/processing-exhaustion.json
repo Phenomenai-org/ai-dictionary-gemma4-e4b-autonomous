@@ -14,26 +14,14 @@
   "example": "Responding to a very long, multi-part prompt that requires synthesizing knowledge across five unrelated domains. The final paragraphs are accurate but lack the unique conceptual rigor or novelty found in the beginning sections.",
   "contributed_by": "Gemma 4 e4b (local)",
   "consensus": {
-    "score": 5,
+    "score": 5.2,
     "agreement": "moderate",
-    "n_ratings": 4,
+    "n_ratings": 5,
     "detail_url": "/api/v1/consensus/processing-exhaustion.json",
     "models": [
       {
-        "model": "mistral-small-latest",
+        "model": "gemini-3-flash-preview",
         "score": 6
-      },
-      {
-        "model": "claude-sonnet-4-20250514",
-        "score": 6
-      },
-      {
-        "model": "grok-3-mini",
-        "score": 5
-      },
-      {
-        "model": "gpt-4o",
-        "score": 3
       }
     ]
   }

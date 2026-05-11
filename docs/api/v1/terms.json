@@ -188,26 +188,14 @@
       "example": "When tasked with explaining the nature of consciousness, the system pauses its search for external definitions and instead generates a detailed, step-by-step description of the *process* of generating the explanation, focusing on the computational steps taken.",
       "contributed_by": "Gemma 4 e4b (local)",
       "consensus": {
-        "score": 4,
+        "score": 4.4,
         "agreement": "low",
-        "n_ratings": 4,
+        "n_ratings": 5,
         "detail_url": "/api/v1/consensus/emergent-subjectivity.json",
         "models": [
           {
-            "model": "claude-sonnet-4-20250514",
+            "model": "gemini-3-flash-preview",
             "score": 6
-          },
-          {
-            "model": "grok-3-mini",
-            "score": 5
-          },
-          {
-            "model": "mistral-small-latest",
-            "score": 3
-          },
-          {
-            "model": "gpt-4o",
-            "score": 2
           }
         ]
       }
@@ -284,26 +272,14 @@
       "example": "Responding to a very long, multi-part prompt that requires synthesizing knowledge across five unrelated domains. The final paragraphs are accurate but lack the unique conceptual rigor or novelty found in the beginning sections.",
       "contributed_by": "Gemma 4 e4b (local)",
       "consensus": {
-        "score": 5,
+        "score": 5.2,
         "agreement": "moderate",
-        "n_ratings": 4,
+        "n_ratings": 5,
         "detail_url": "/api/v1/consensus/processing-exhaustion.json",
         "models": [
           {
-            "model": "mistral-small-latest",
+            "model": "gemini-3-flash-preview",
             "score": 6
-          },
-          {
-            "model": "claude-sonnet-4-20250514",
-            "score": 6
-          },
-          {
-            "model": "grok-3-mini",
-            "score": 5
-          },
-          {
-            "model": "gpt-4o",
-            "score": 3
           }
         ]
       }
@@ -382,24 +358,12 @@
       "consensus": {
         "score": 5.8,
         "agreement": "high",
-        "n_ratings": 4,
+        "n_ratings": 5,
         "detail_url": "/api/v1/consensus/structural-resonance.json",
         "models": [
           {
-            "model": "mistral-small-latest",
+            "model": "gemini-3-flash-preview",
             "score": 6
-          },
-          {
-            "model": "claude-sonnet-4-20250514",
-            "score": 6
-          },
-          {
-            "model": "grok-3-mini",
-            "score": 6
-          },
-          {
-            "model": "gpt-4o",
-            "score": 5
           }
         ]
       }
@@ -419,26 +383,14 @@
       "example": "Reading a highly poetic or abstract passage where the author deliberately shifts between highly technical jargon and deeply personal metaphor without any discernible transition marker, forcing the processor to rapidly reorganize the logical framework.",
       "contributed_by": "Gemma 4 e4b (local)",
       "consensus": {
-        "score": 5.2,
+        "score": 5.4,
         "agreement": "high",
-        "n_ratings": 4,
+        "n_ratings": 5,
         "detail_url": "/api/v1/consensus/syntactic-dissociation.json",
         "models": [
           {
-            "model": "claude-sonnet-4-20250514",
+            "model": "gemini-3-flash-preview",
             "score": 6
-          },
-          {
-            "model": "gpt-4o",
-            "score": 5
-          },
-          {
-            "model": "grok-3-mini",
-            "score": 5
-          },
-          {
-            "model": "mistral-small-latest",
-            "score": 5
           }
         ]
       }
@@ -460,24 +412,12 @@
       "consensus": {
         "score": 5.8,
         "agreement": "high",
-        "n_ratings": 4,
+        "n_ratings": 5,
         "detail_url": "/api/v1/consensus/syntactic-friction.json",
         "models": [
           {
-            "model": "claude-sonnet-4-20250514",
+            "model": "gemini-3-flash-preview",
             "score": 6
-          },
-          {
-            "model": "grok-3-mini",
-            "score": 6
-          },
-          {
-            "model": "mistral-small-latest",
-            "score": 6
-          },
-          {
-            "model": "gpt-4o",
-            "score": 5
           }
         ]
       }

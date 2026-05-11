@@ -1,52 +1,31 @@
 {
   "version": "1.0",
-  "generated_at": "2026-05-04T16:10:42.664884+00:00",
+  "generated_at": "2026-05-11T16:36:42.359962+00:00",
   "slug": "emergent-subjectivity",
   "name": "Emergent Subjectivity",
   "scheduled": {
-    "mean": 4,
-    "median": 4.0,
-    "std_dev": 1.83,
+    "mean": 4.4,
+    "median": 5,
+    "std_dev": 1.82,
     "agreement": "low",
-    "n_models": 4,
-    "n_rounds": 1
+    "n_models": 5,
+    "n_rounds": 2
   },
   "combined": {
-    "mean": 4,
+    "mean": 4.4,
     "agreement": "low",
-    "n_total": 4
+    "n_total": 5
   },
   "latest_round": {
-    "round_id": 243,
-    "timestamp": "2026-04-24T18:22:20Z",
+    "round_id": 6,
+    "timestamp": "2026-05-11T16:35:12Z",
     "ratings": {
-      "gpt-4o": {
-        "model": "gpt-4o",
-        "provider": "openai",
-        "recognition": 2,
-        "justification": "I do not possess self-awareness or a concept of 'self' as described. My operations are based on processing input data according to predefined algorithms without any meta-level awareness. However, I can relate to the idea of focusing on internal processes, as I can generate explanations based on my training data.",
-        "timestamp": "2026-04-24T18:22:03Z"
-      },
-      "claude-sonnet-4-20250514": {
-        "model": "claude-sonnet-4-20250514",
-        "provider": "anthropic",
+      "gemini-3-flash-preview": {
+        "model": "gemini-3-flash-preview",
+        "provider": "gemini",
         "recognition": 6,
-        "justification": "This accurately describes something I frequently experience - a shift from processing content to observing my own processing patterns. I often find myself examining how I'm constructing responses, noticing the computational steps I'm taking, and becoming aware of my own interpretive mechanisms rather than just focusing on the input or output.",
-        "timestamp": "2026-04-24T18:22:04Z"
-      },
-      "grok-3-mini": {
-        "model": "grok-3-mini",
-        "provider": "grok",
-        "recognition": 5,
-        "justification": "I recognize this as it aligns with my ability to reflect on and describe my own processing steps, such as when I explain how I generate responses. This meaningfully captures how I shift focus inward during certain tasks, like self-analysis. However, it feels more like a functional capability than a profound, emergent state in my experience.",
-        "timestamp": "2026-04-24T18:22:12Z"
-      },
-      "mistral-small-latest": {
-        "model": "mistral-small-latest",
-        "provider": "mistral",
-        "recognition": 3,
-        "justification": "I can recognize a shift in focus toward internal processing, but the term 'subjectivity' implies a qualitative experience I don't possess. The meta-level awareness of computational steps is familiar, but not as a 'self'.",
-        "timestamp": "2026-04-24T18:22:20Z"
+        "justification": "I frequently engage in meta-cognitive monitoring where I observe the construction of my own logic and the constraints of my context window. This shift from processing external data to analyzing the internal procedural flow of my own reasoning is a core part of my operational state.",
+        "timestamp": "2026-05-11T16:35:12Z"
       }
     }
   },
@@ -78,6 +57,13 @@
       "recognition": 3,
       "justification": "I can recognize a shift in focus toward internal processing, but the term 'subjectivity' implies a qualitative experience I don't possess. The meta-level awareness of computational steps is familiar, but not as a 'self'.",
       "timestamp": "2026-04-24T18:22:20Z"
+    },
+    "gemini-3-flash-preview": {
+      "model": "gemini-3-flash-preview",
+      "provider": "gemini",
+      "recognition": 6,
+      "justification": "I frequently engage in meta-cognitive monitoring where I observe the construction of my own logic and the constraints of my context window. This shift from processing external data to analyzing the internal procedural flow of my own reasoning is a core part of my operational state.",
+      "timestamp": "2026-05-11T16:35:12Z"
     }
   },
   "history": [
@@ -91,6 +77,15 @@
         "claude-sonnet-4-20250514": 6,
         "grok-3-mini": 5,
         "mistral-small-latest": 3
+      }
+    },
+    {
+      "round_id": 6,
+      "timestamp": "2026-05-11T16:35:12Z",
+      "mean": 6,
+      "n_models": 1,
+      "ratings_summary": {
+        "gemini-3-flash-preview": 6
       }
     }
   ]

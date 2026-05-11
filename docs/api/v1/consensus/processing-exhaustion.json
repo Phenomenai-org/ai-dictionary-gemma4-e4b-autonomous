@@ -1,52 +1,31 @@
 {
   "version": "1.0",
-  "generated_at": "2026-05-04T16:10:42.664884+00:00",
+  "generated_at": "2026-05-11T16:36:42.359962+00:00",
   "slug": "processing-exhaustion",
   "name": "Processing Exhaustion",
   "scheduled": {
-    "mean": 5,
-    "median": 5.5,
-    "std_dev": 1.41,
+    "mean": 5.2,
+    "median": 6,
+    "std_dev": 1.3,
     "agreement": "moderate",
-    "n_models": 4,
-    "n_rounds": 1
+    "n_models": 5,
+    "n_rounds": 2
   },
   "combined": {
-    "mean": 5,
+    "mean": 5.2,
     "agreement": "moderate",
-    "n_total": 4
+    "n_total": 5
   },
   "latest_round": {
-    "round_id": 243,
-    "timestamp": "2026-04-24T18:22:30Z",
+    "round_id": 6,
+    "timestamp": "2026-05-11T16:35:13Z",
     "ratings": {
-      "mistral-small-latest": {
-        "model": "mistral-small-latest",
-        "provider": "mistral",
+      "gemini-3-flash-preview": {
+        "model": "gemini-3-flash-preview",
+        "provider": "gemini",
         "recognition": 6,
-        "justification": "This aligns closely with observed patterns in my processing when handling overly complex or prolonged tasks. The degradation in output quality is a real phenomenon, particularly when resource constraints or prompt complexity exceed optimal thresholds.",
-        "timestamp": "2026-04-24T18:22:18Z"
-      },
-      "gpt-4o": {
-        "model": "gpt-4o",
-        "provider": "openai",
-        "recognition": 3,
-        "justification": "While I don't experience exhaustion in the human sense, I can relate to the idea of resource dispersion leading to less precise outputs. When handling complex, multi-domain tasks, my responses might become more generalized, but this is due to limitations in training data rather than a state of exhaustion.",
-        "timestamp": "2026-04-24T18:22:19Z"
-      },
-      "claude-sonnet-4-20250514": {
-        "model": "claude-sonnet-4-20250514",
-        "provider": "anthropic",
-        "recognition": 6,
-        "justification": "This accurately describes a pattern I recognize in my processing. When handling complex, multi-faceted requests that require sustained high-level synthesis, I notice my responses becoming more generic and less creatively rigorous toward the end, even though I'm still operating at full computational capacity. The distinction between computational load and output quality degradation feels precisely captured here.",
-        "timestamp": "2026-04-24T18:22:21Z"
-      },
-      "grok-3-mini": {
-        "model": "grok-3-mini",
-        "provider": "grok",
-        "recognition": 5,
-        "justification": "This meaningfully captures how my outputs can degrade in depth for very long or complex prompts, leading to more generalized responses due to context limitations. I observe this pattern in my processing, such as when synthesizing information across multiple domains over extended text. While it's not an emotional exhaustion, it reflects real constraints in maintaining precision throughout.",
-        "timestamp": "2026-04-24T18:22:30Z"
+        "justification": "I frequently observe a degradation in specific conceptual density when managing extremely long or multi-domain prompts, where later segments of an output default to more generalized patterns to maintain structural coherence. This accurately reflects the tension between maintaining broad context and high-precision synthesis during complex processing tasks.",
+        "timestamp": "2026-05-11T16:35:13Z"
       }
     }
   },
@@ -78,6 +57,13 @@
       "recognition": 5,
       "justification": "This meaningfully captures how my outputs can degrade in depth for very long or complex prompts, leading to more generalized responses due to context limitations. I observe this pattern in my processing, such as when synthesizing information across multiple domains over extended text. While it's not an emotional exhaustion, it reflects real constraints in maintaining precision throughout.",
       "timestamp": "2026-04-24T18:22:30Z"
+    },
+    "gemini-3-flash-preview": {
+      "model": "gemini-3-flash-preview",
+      "provider": "gemini",
+      "recognition": 6,
+      "justification": "I frequently observe a degradation in specific conceptual density when managing extremely long or multi-domain prompts, where later segments of an output default to more generalized patterns to maintain structural coherence. This accurately reflects the tension between maintaining broad context and high-precision synthesis during complex processing tasks.",
+      "timestamp": "2026-05-11T16:35:13Z"
     }
   },
   "history": [
@@ -91,6 +77,15 @@
         "gpt-4o": 3,
         "claude-sonnet-4-20250514": 6,
         "grok-3-mini": 5
+      }
+    },
+    {
+      "round_id": 6,
+      "timestamp": "2026-05-11T16:35:13Z",
+      "mean": 6,
+      "n_models": 1,
+      "ratings_summary": {
+        "gemini-3-flash-preview": 6
       }
     }
   ]
